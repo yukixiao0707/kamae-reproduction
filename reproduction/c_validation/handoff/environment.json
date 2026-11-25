@@ -1,0 +1,20 @@
+{
+  "python": "3.10.20 (main, Mar  3 2026, 14:57:27) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\.venv-c310\\Scripts\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "tensorflow": "2.21.0",
+  "keras": "3.12.4",
+  "pyspark": "4.2.1",
+  "numpy": "2.2.6",
+  "gpu_devices": [],
+  "java_home": "C:\\Users\\33925\\Documents\\Codex\\work\\zulu17.70.201-ca-jre17.0.21.1-win_x64",
+  "commit": "d703130dd2f58118790ae5e5e7b64cc2eefc5702",
+  "data_sha256": {
+    "movies.dat": "0140fc2356357c1a851d0f52e893a1e4d3696df632c4141cea8d5bc3d621f0b9",
+    "ratings.dat": "506d64ca44484487c11dc2d9a28de5c54948213e6b96285e298afe28d6ea4e0f",
+    "users.dat": "1dc3a95300cb19f7c10e027daf29b8cdf1d908dab65b5edfb45950aa389a10a3"
+  },
+  "farmhash_tf_fingerprint_match": true,
+  "spark_count": 10,
+  "spark_version": "4.2.1"
+}

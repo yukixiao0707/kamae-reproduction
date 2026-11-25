@@ -1,0 +1,8 @@
+﻿group,outputs,passed_outputs,mismatches,continuous_exact_mismatches
+real_test,11,11,0,309894
+joint_oov_01,11,11,0,309894
+joint_oov_05,11,11,0,309894
+joint_oov_10,11,11,0,309894
+single_movieid_10,11,11,0,6974
+single_occupation_10,11,11,0,6974
+single_genres_10,11,11,0,6974

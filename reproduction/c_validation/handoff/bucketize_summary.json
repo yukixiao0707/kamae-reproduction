@@ -1,0 +1,53 @@
+{
+  "splits": [
+    0.0,
+    0.1,
+    1.0
+  ],
+  "total_cases": 32,
+  "parity_failures": 4,
+  "reload_failures": 0,
+  "failures": [
+    {
+      "dtype": "float32",
+      "case": "左邻",
+      "input_repr": "-1.401298464324817e-45",
+      "spark_bucket": 1,
+      "keras_bucket": 2,
+      "abs_error": 1,
+      "parity": false,
+      "reload_equal": true
+    },
+    {
+      "dtype": "float64",
+      "case": "左邻",
+      "input_repr": "-5e-324",
+      "spark_bucket": 1,
+      "keras_bucket": 2,
+      "abs_error": 1,
+      "parity": false,
+      "reload_equal": true
+    },
+    {
+      "dtype": "float64",
+      "case": "边界",
+      "input_repr": "0.1",
+      "spark_bucket": 3,
+      "keras_bucket": 2,
+      "abs_error": 1,
+      "parity": false,
+      "reload_equal": true
+    },
+    {
+      "dtype": "float64",
+      "case": "右邻",
+      "input_repr": "0.10000000000000002",
+      "spark_bucket": 3,
+      "keras_bucket": 2,
+      "abs_error": 1,
+      "parity": false,
+      "reload_equal": true
+    }
+  ],
+  "note": "保留所有反例；NaN/无穷值与有限边界分开解释，分桶整数差异不以浮点容差豁免。"
+}

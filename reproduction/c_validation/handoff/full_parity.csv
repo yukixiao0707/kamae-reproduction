@@ -1,0 +1,5 @@
+﻿column,rows,elements,mismatches,max_abs_error,spark_type,spark_shape,keras_shape,logical_shape,keras_dtype,mean_abs_error,passed
+UserID_indexed,1000209,1000209,0,0.0,int32,[4096],"[4096, 1]",[],int32,0.0,True
+MovieID_indexed,1000209,1000209,0,0.0,int32,[4096],"[4096, 1]",[],int32,0.0,True
+Occupation_indexed,1000209,21004389,0,0.0,list<element: float>,"[4096, 21]","[4096, 21]",[21],float32,0.0,True
+Genres_indexed,1000209,6001254,0,0.0,list<element: int32 not null>,"[4096, 6]","[4096, 6]",[6],int32,0.0,True

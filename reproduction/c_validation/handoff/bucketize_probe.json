@@ -1,0 +1,262 @@
+{
+  "float32_boundary_0_1": 0.10000000149011612,
+  "all_raw_tf_match_keras": true,
+  "cases": [
+    {
+      "dtype": "float32",
+      "input_repr": "-2.0",
+      "tensor_roundtrip": "-2.0",
+      "raw_tf_bucket": 1,
+      "keras_bucket": 1,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.05",
+      "tensor_roundtrip": "0.05000000074505806",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.5",
+      "tensor_roundtrip": "0.5",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "2.0",
+      "tensor_roundtrip": "2.0",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "-1.401298464324817e-45",
+      "tensor_roundtrip": "-1.401298464324817e-45",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.0",
+      "tensor_roundtrip": "0.0",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "1.401298464324817e-45",
+      "tensor_roundtrip": "1.401298464324817e-45",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.09999999403953552",
+      "tensor_roundtrip": "0.09999999403953552",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.10000000149011612",
+      "tensor_roundtrip": "0.10000000149011612",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.10000000894069672",
+      "tensor_roundtrip": "0.10000000894069672",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "0.9999999403953552",
+      "tensor_roundtrip": "0.9999999403953552",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "1.0",
+      "tensor_roundtrip": "1.0",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "1.0000001192092896",
+      "tensor_roundtrip": "1.0000001192092896",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "-inf",
+      "tensor_roundtrip": "-inf",
+      "raw_tf_bucket": 1,
+      "keras_bucket": 1,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "inf",
+      "tensor_roundtrip": "inf",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float32",
+      "input_repr": "nan",
+      "tensor_roundtrip": "nan",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "-2.0",
+      "tensor_roundtrip": "-2.0",
+      "raw_tf_bucket": 1,
+      "keras_bucket": 1,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.05",
+      "tensor_roundtrip": "0.05",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.5",
+      "tensor_roundtrip": "0.5",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "2.0",
+      "tensor_roundtrip": "2.0",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "-5e-324",
+      "tensor_roundtrip": "-5e-324",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.0",
+      "tensor_roundtrip": "0.0",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "5e-324",
+      "tensor_roundtrip": "5e-324",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.09999999999999999",
+      "tensor_roundtrip": "0.09999999999999999",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.1",
+      "tensor_roundtrip": "0.1",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.10000000000000002",
+      "tensor_roundtrip": "0.10000000000000002",
+      "raw_tf_bucket": 2,
+      "keras_bucket": 2,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "0.9999999999999999",
+      "tensor_roundtrip": "0.9999999999999999",
+      "raw_tf_bucket": 3,
+      "keras_bucket": 3,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "1.0",
+      "tensor_roundtrip": "1.0",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "1.0000000000000002",
+      "tensor_roundtrip": "1.0000000000000002",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "-inf",
+      "tensor_roundtrip": "-inf",
+      "raw_tf_bucket": 1,
+      "keras_bucket": 1,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "inf",
+      "tensor_roundtrip": "inf",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    },
+    {
+      "dtype": "float64",
+      "input_repr": "nan",
+      "tensor_roundtrip": "nan",
+      "raw_tf_bucket": 4,
+      "keras_bucket": 4,
+      "same_as_keras": true
+    }
+  ]
+}

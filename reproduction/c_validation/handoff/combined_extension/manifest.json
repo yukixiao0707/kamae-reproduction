@@ -1,0 +1,149 @@
+{
+  "status": "prepared",
+  "input_sha256": {
+    "movies.dat": "0140fc2356357c1a851d0f52e893a1e4d3696df632c4141cea8d5bc3d621f0b9",
+    "ratings.dat": "506d64ca44484487c11dc2d9a28de5c54948213e6b96285e298afe28d6ea4e0f",
+    "users.dat": "1dc3a95300cb19f7c10e027daf29b8cdf1d908dab65b5edfb45950aa389a10a3"
+  },
+  "total_rows": 1000209,
+  "train_rows": 800167,
+  "test_rows": 200042,
+  "order": [
+    "Timestamp",
+    "int(UserID)",
+    "int(MovieID)",
+    "Rating"
+  ],
+  "timestamps": {
+    "train": {
+      "min": 956703932,
+      "max": 975768738
+    },
+    "test": {
+      "min": 975768738,
+      "max": 1046454590
+    }
+  },
+  "natural_unseen_rows_by_field": {
+    "UserID": 95502,
+    "MovieID": 115,
+    "Occupation": 0,
+    "Genres": 0
+  },
+  "vocabulary_sizes": {
+    "UserID": 5400,
+    "MovieID": 3662,
+    "Occupation": 21,
+    "Genres": 18
+  },
+  "splits": [
+    -1.0,
+    0.0,
+    0.1,
+    1.0
+  ],
+  "continuous_atol": 1e-06,
+  "continuous_rtol": 1e-06,
+  "model_sha256": "cb07500649528c7f02367efab3e1122de97f70cbfbde5376a1a2cb8fdbe0ba2e",
+  "reload_probe_rows": 128,
+  "reload_match": {
+    "UserID_indexed": true,
+    "MovieID_indexed": true,
+    "Occupation_indexed": true,
+    "Genres_split": true,
+    "Genres_indexed": true,
+    "time_z_32": true,
+    "time_scaled_32": true,
+    "time_bucket_32": true,
+    "time_z_64": true,
+    "time_scaled_64": true,
+    "time_bucket_64": true
+  },
+  "frozen_parameters_sha256": "fa5c581bb0c79b3be2301194d695a925af8689f98eec1e3b1498b9f35c8fdbfa",
+  "fit_scope": "train_only",
+  "groups": [
+    {
+      "name": "real_test",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_real_test.parquet",
+      "injected_fields": [],
+      "rows": 200042,
+      "injected_rows": 0,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.0
+    },
+    {
+      "name": "joint_oov_01",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_01.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 2001,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.010002899391127864
+    },
+    {
+      "name": "joint_oov_05",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_05.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 10005,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.050014496955639316
+    },
+    {
+      "name": "joint_oov_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_10.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 20010,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.10002899391127863
+    },
+    {
+      "name": "single_movieid_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_movieid_10.parquet",
+      "injected_fields": [
+        "MovieID"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    },
+    {
+      "name": "single_occupation_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_occupation_10.parquet",
+      "injected_fields": [
+        "Occupation"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    },
+    {
+      "name": "single_genres_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_genres_10.parquet",
+      "injected_fields": [
+        "Genres"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    }
+  ],
+  "parameters_unchanged": true,
+  "prepare_seconds": 114.34052059985697
+}

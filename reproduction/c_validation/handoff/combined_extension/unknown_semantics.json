@@ -1,0 +1,89 @@
+{
+  "checks": [
+    {
+      "group": "joint_oov_01",
+      "field": "MovieID",
+      "rows": 2001,
+      "expected_encoding": "OOV=0",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_01",
+      "field": "Occupation",
+      "rows": 2001,
+      "expected_encoding": "全零独热向量",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_01",
+      "field": "Genres",
+      "rows": 2001,
+      "expected_encoding": "[1,0,0,0,0,0]",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_05",
+      "field": "MovieID",
+      "rows": 10005,
+      "expected_encoding": "OOV=0",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_05",
+      "field": "Occupation",
+      "rows": 10005,
+      "expected_encoding": "全零独热向量",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_05",
+      "field": "Genres",
+      "rows": 10005,
+      "expected_encoding": "[1,0,0,0,0,0]",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_10",
+      "field": "MovieID",
+      "rows": 20010,
+      "expected_encoding": "OOV=0",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_10",
+      "field": "Occupation",
+      "rows": 20010,
+      "expected_encoding": "全零独热向量",
+      "violations": 0
+    },
+    {
+      "group": "joint_oov_10",
+      "field": "Genres",
+      "rows": 20010,
+      "expected_encoding": "[1,0,0,0,0,0]",
+      "violations": 0
+    },
+    {
+      "group": "single_movieid_10",
+      "field": "MovieID",
+      "rows": 410,
+      "expected_encoding": "OOV=0",
+      "violations": 0
+    },
+    {
+      "group": "single_occupation_10",
+      "field": "Occupation",
+      "rows": 410,
+      "expected_encoding": "全零独热向量",
+      "violations": 0
+    },
+    {
+      "group": "single_genres_10",
+      "field": "Genres",
+      "rows": 410,
+      "expected_encoding": "[1,0,0,0,0,0]",
+      "violations": 0
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,19 @@
+{
+  "repository": "https://github.com/cdarlint/winutils",
+  "native_tools_version": "3.3.6",
+  "spark_hadoop_java_version": "3.5.0",
+  "files": {
+    "winutils.exe": {
+      "url": "https://github.com/cdarlint/winutils/blob/master/hadoop-3.3.6/bin/winutils.exe",
+      "git_blob_sha": "676b246c48c9101ea8565b18a8aa71e16e356789",
+      "sha256": "496a591eb1e67df2a620f710d529ba6ddfe1c19149e6647cc4e320bb0efd8553",
+      "bytes": 119296
+    },
+    "hadoop.dll": {
+      "url": "https://github.com/cdarlint/winutils/blob/master/hadoop-3.3.6/bin/hadoop.dll",
+      "git_blob_sha": "2a3e2e88b0c507985bef7467db9f723aae18a31e",
+      "sha256": "d7ab36a68518748cef142be2da5069b4c763c2cd764c1d2e6ac48c7200405be3",
+      "bytes": 78848
+    }
+  }
+}

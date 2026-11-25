@@ -1,0 +1,18 @@
+{
+  "data": {
+    "url": "https://files.grouplens.org/datasets/movielens/ml-1m.zip",
+    "archive_sha256": "a6898adb50b9ca05aa231689da44c217cb524e7ebd39d264c56e2832f2c54e20",
+    "files": {
+      "movies.dat": "0140fc2356357c1a851d0f52e893a1e4d3696df632c4141cea8d5bc3d621f0b9",
+      "ratings.dat": "506d64ca44484487c11dc2d9a28de5c54948213e6b96285e298afe28d6ea4e0f",
+      "users.dat": "1dc3a95300cb19f7c10e027daf29b8cdf1d908dab65b5edfb45950aa389a10a3"
+    }
+  },
+  "java": {
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.201-ca-jre17.0.21.1-win_x64.zip",
+    "sha256": "7ac4b62ed405c724dfd5731442f77a655d0bfc8dd3e92921702292280aa75f55",
+    "java_home": "C:\\Users\\33925\\Documents\\Codex\\work\\zulu17.70.201-ca-jre17.0.21.1-win_x64",
+    "version": "17.0.21.1",
+    "hash_kind": "本实验归档固定 SHA256"
+  }
+}

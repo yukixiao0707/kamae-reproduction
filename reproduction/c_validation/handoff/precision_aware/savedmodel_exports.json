@@ -1,0 +1,16 @@
+{
+  "models": [
+    {
+      "dtype": "float32",
+      "source_model_sha256": "71bd977a7fa117952a959c2eb1edf14896ee35b6c982e754eb537d026109aaec",
+      "directory": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\saved_adaptive_float32",
+      "saved_model_sha256": "3d7a6842bb4598a444f9c48dfc0a8121b4ae32720b587c2a5d8a1335dd65f093"
+    },
+    {
+      "dtype": "float64",
+      "source_model_sha256": "edc2257b69c2a3ac3c646baa2a80da942fd3c500af8299ec5e55a1785e00f559",
+      "directory": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\saved_adaptive_float64",
+      "saved_model_sha256": "d8e9965fed53ba9f4ba89d328b2d790b25f5b2bea097a2beeda11ba5173519d0"
+    }
+  ]
+}

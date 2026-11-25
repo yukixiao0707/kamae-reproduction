@@ -1,0 +1,298 @@
+﻿group,cohort,output,criterion,rows,elements,mismatches,exact_mismatches,nonfinite_mismatches,max_abs_error,spark_dtype,keras_dtype,spark_first_shape,keras_first_shape,mean_abs_error,passed
+real_test,all,UserID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,seen_inputs,UserID_indexed,exact,104449,104449,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,natural_unseen,UserID_indexed,exact,95593,95593,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,all,MovieID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,seen_inputs,MovieID_indexed,exact,104449,104449,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,natural_unseen,MovieID_indexed,exact,95593,95593,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+real_test,all,Occupation_indexed,exact,200042,4200882,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+real_test,seen_inputs,Occupation_indexed,exact,104449,2193429,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+real_test,natural_unseen,Occupation_indexed,exact,95593,2007453,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+real_test,all,Genres_split,exact,200042,1200252,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+real_test,seen_inputs,Genres_split,exact,104449,626694,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+real_test,natural_unseen,Genres_split,exact,95593,573558,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+real_test,all,Genres_indexed,exact,200042,1200252,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+real_test,seen_inputs,Genres_indexed,exact,104449,626694,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+real_test,natural_unseen,Genres_indexed,exact,95593,573558,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+real_test,all,time_z_32,atol=rtol=1e-6,200042,200042,0,127777,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.3824122824557185e-07,True
+real_test,seen_inputs,time_z_32,atol=rtol=1e-6,104449,104449,0,56144,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.665373713810697e-07,True
+real_test,natural_unseen,time_z_32,atol=rtol=1e-6,95593,95593,0,71633,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.0732365212221957e-07,True
+real_test,all,time_scaled_32,atol=rtol=1e-6,200042,200042,0,96796,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3793864920332367e-08,True
+real_test,seen_inputs,time_scaled_32,atol=rtol=1e-6,104449,104449,0,48098,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.772506170673931e-08,True
+real_test,natural_unseen,time_scaled_32,atol=rtol=1e-6,95593,95593,0,48698,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.498471187073458e-09,True
+real_test,all,time_bucket_32,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+real_test,seen_inputs,time_bucket_32,exact,104449,104449,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+real_test,natural_unseen,time_bucket_32,exact,95593,95593,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+real_test,all,time_z_64,atol=rtol=1e-6,200042,200042,0,46729,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.1890545092222699e-16,True
+real_test,seen_inputs,time_z_64,atol=rtol=1e-6,104449,104449,0,24198,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.6139576641143885e-16,True
+real_test,natural_unseen,time_z_64,atol=rtol=1e-6,95593,95593,0,22531,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",7.247871504687322e-17,True
+real_test,all,time_scaled_64,atol=rtol=1e-6,200042,200042,0,38592,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.1937247918390305e-17,True
+real_test,seen_inputs,time_scaled_64,atol=rtol=1e-6,104449,104449,0,20454,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.6242415421440954e-17,True
+real_test,natural_unseen,time_scaled_64,atol=rtol=1e-6,95593,95593,0,18138,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",7.233237786621902e-18,True
+real_test,all,time_bucket_64,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+real_test,seen_inputs,time_bucket_64,exact,104449,104449,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+real_test,natural_unseen,time_bucket_64,exact,95593,95593,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,all,UserID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,seen_inputs,UserID_indexed,exact,103413,103413,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,natural_unseen,UserID_indexed,exact,94628,94628,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,injected,UserID_indexed,exact,2001,2001,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,all,MovieID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,seen_inputs,MovieID_indexed,exact,103413,103413,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,natural_unseen,MovieID_indexed,exact,94628,94628,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,injected,MovieID_indexed,exact,2001,2001,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_01,all,Occupation_indexed,exact,200042,4200882,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_01,seen_inputs,Occupation_indexed,exact,103413,2171673,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_01,natural_unseen,Occupation_indexed,exact,94628,1987188,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_01,injected,Occupation_indexed,exact,2001,42021,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_01,all,Genres_split,exact,200042,1200252,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,seen_inputs,Genres_split,exact,103413,620478,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,natural_unseen,Genres_split,exact,94628,567768,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,injected,Genres_split,exact,2001,12006,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,all,Genres_indexed,exact,200042,1200252,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,seen_inputs,Genres_indexed,exact,103413,620478,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,natural_unseen,Genres_indexed,exact,94628,567768,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,injected,Genres_indexed,exact,2001,12006,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_01,all,time_z_32,atol=rtol=1e-6,200042,200042,0,127777,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.3824122824557185e-07,True
+joint_oov_01,seen_inputs,time_z_32,atol=rtol=1e-6,103413,103413,0,55628,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.6668758540070367e-07,True
+joint_oov_01,natural_unseen,time_z_32,atol=rtol=1e-6,94628,94628,0,70905,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.0730448562113165e-07,True
+joint_oov_01,injected,time_z_32,atol=rtol=1e-6,2001,2001,0,1244,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.311242610201247e-07,True
+joint_oov_01,all,time_scaled_32,atol=rtol=1e-6,200042,200042,0,96796,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3793864920332367e-08,True
+joint_oov_01,seen_inputs,time_scaled_32,atol=rtol=1e-6,103413,103413,0,47651,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.7738798312879518e-08,True
+joint_oov_01,natural_unseen,time_scaled_32,atol=rtol=1e-6,94628,94628,0,48216,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.500852384807928e-09,True
+joint_oov_01,injected,time_scaled_32,atol=rtol=1e-6,2001,2001,0,929,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.2935190901405986e-08,True
+joint_oov_01,all,time_bucket_32,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,seen_inputs,time_bucket_32,exact,103413,103413,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,natural_unseen,time_bucket_32,exact,94628,94628,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,injected,time_bucket_32,exact,2001,2001,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,all,time_z_64,atol=rtol=1e-6,200042,200042,0,46729,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.1890545092222699e-16,True
+joint_oov_01,seen_inputs,time_z_64,atol=rtol=1e-6,103413,103413,0,23936,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.6124982144667428e-16,True
+joint_oov_01,natural_unseen,time_z_64,atol=rtol=1e-6,94628,94628,0,22277,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",7.245053495440321e-17,True
+joint_oov_01,injected,time_z_64,atol=rtol=1e-6,2001,2001,0,516,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.2738990827283155e-16,True
+joint_oov_01,all,time_scaled_64,atol=rtol=1e-6,200042,200042,0,38592,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.1937247918390305e-17,True
+joint_oov_01,seen_inputs,time_scaled_64,atol=rtol=1e-6,103413,103413,0,20243,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.6238996519277188e-17,True
+joint_oov_01,natural_unseen,time_scaled_64,atol=rtol=1e-6,94628,94628,0,17937,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",7.2304465327479e-18,True
+joint_oov_01,injected,time_scaled_64,atol=rtol=1e-6,2001,2001,0,412,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.2206350095828807e-17,True
+joint_oov_01,all,time_bucket_64,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,seen_inputs,time_bucket_64,exact,103413,103413,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,natural_unseen,time_bucket_64,exact,94628,94628,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_01,injected,time_bucket_64,exact,2001,2001,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,all,UserID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,seen_inputs,UserID_indexed,exact,99268,99268,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,natural_unseen,UserID_indexed,exact,90769,90769,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,injected,UserID_indexed,exact,10005,10005,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,all,MovieID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,seen_inputs,MovieID_indexed,exact,99268,99268,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,natural_unseen,MovieID_indexed,exact,90769,90769,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,injected,MovieID_indexed,exact,10005,10005,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_05,all,Occupation_indexed,exact,200042,4200882,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_05,seen_inputs,Occupation_indexed,exact,99268,2084628,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_05,natural_unseen,Occupation_indexed,exact,90769,1906149,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_05,injected,Occupation_indexed,exact,10005,210105,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_05,all,Genres_split,exact,200042,1200252,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,seen_inputs,Genres_split,exact,99268,595608,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,natural_unseen,Genres_split,exact,90769,544614,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,injected,Genres_split,exact,10005,60030,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,all,Genres_indexed,exact,200042,1200252,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,seen_inputs,Genres_indexed,exact,99268,595608,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,natural_unseen,Genres_indexed,exact,90769,544614,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,injected,Genres_indexed,exact,10005,60030,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_05,all,time_z_32,atol=rtol=1e-6,200042,200042,0,127777,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.3824122824557185e-07,True
+joint_oov_05,seen_inputs,time_z_32,atol=rtol=1e-6,99268,99268,0,53452,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.6681110512582474e-07,True
+joint_oov_05,natural_unseen,time_z_32,atol=rtol=1e-6,90769,90769,0,68050,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.0729742254524427e-07,True
+joint_oov_05,injected,time_z_32,atol=rtol=1e-6,10005,10005,0,6275,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.355089705208431e-07,True
+joint_oov_05,all,time_scaled_32,atol=rtol=1e-6,200042,200042,0,96796,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3793864920332367e-08,True
+joint_oov_05,seen_inputs,time_scaled_32,atol=rtol=1e-6,99268,99268,0,45779,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.7755210613384924e-08,True
+joint_oov_05,natural_unseen,time_scaled_32,atol=rtol=1e-6,90769,90769,0,46323,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.51143537164831e-09,True
+joint_oov_05,injected,time_scaled_32,atol=rtol=1e-6,10005,10005,0,4694,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3341789302797332e-08,True
+joint_oov_05,all,time_bucket_32,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,seen_inputs,time_bucket_32,exact,99268,99268,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,natural_unseen,time_bucket_32,exact,90769,90769,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,injected,time_bucket_32,exact,10005,10005,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,all,time_z_64,atol=rtol=1e-6,200042,200042,0,46729,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.1890545092222699e-16,True
+joint_oov_05,seen_inputs,time_z_64,atol=rtol=1e-6,99268,99268,0,22985,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.6123219131644823e-16,True
+joint_oov_05,natural_unseen,time_z_64,atol=rtol=1e-6,90769,90769,0,21279,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",7.218914267357439e-17,True
+joint_oov_05,injected,time_z_64,atol=rtol=1e-6,10005,10005,0,2465,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.227736886002272e-16,True
+joint_oov_05,all,time_scaled_64,atol=rtol=1e-6,200042,200042,0,38592,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.1937247918390305e-17,True
+joint_oov_05,seen_inputs,time_scaled_64,atol=rtol=1e-6,99268,99268,0,19449,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.6232599608544065e-17,True
+joint_oov_05,natural_unseen,time_scaled_64,atol=rtol=1e-6,90769,90769,0,17156,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",7.210963921248015e-18,True
+joint_oov_05,injected,time_scaled_64,atol=rtol=1e-6,10005,10005,0,1987,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.2198027584399833e-17,True
+joint_oov_05,all,time_bucket_64,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,seen_inputs,time_bucket_64,exact,99268,99268,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,natural_unseen,time_bucket_64,exact,90769,90769,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_05,injected,time_bucket_64,exact,10005,10005,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,all,UserID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,seen_inputs,UserID_indexed,exact,94063,94063,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,natural_unseen,UserID_indexed,exact,85969,85969,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,injected,UserID_indexed,exact,20010,20010,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,all,MovieID_indexed,exact,200042,200042,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,seen_inputs,MovieID_indexed,exact,94063,94063,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,natural_unseen,MovieID_indexed,exact,85969,85969,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,injected,MovieID_indexed,exact,20010,20010,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+joint_oov_10,all,Occupation_indexed,exact,200042,4200882,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_10,seen_inputs,Occupation_indexed,exact,94063,1975323,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_10,natural_unseen,Occupation_indexed,exact,85969,1805349,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_10,injected,Occupation_indexed,exact,20010,420210,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+joint_oov_10,all,Genres_split,exact,200042,1200252,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,seen_inputs,Genres_split,exact,94063,564378,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,natural_unseen,Genres_split,exact,85969,515814,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,injected,Genres_split,exact,20010,120060,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,all,Genres_indexed,exact,200042,1200252,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,seen_inputs,Genres_indexed,exact,94063,564378,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,natural_unseen,Genres_indexed,exact,85969,515814,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,injected,Genres_indexed,exact,20010,120060,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+joint_oov_10,all,time_z_32,atol=rtol=1e-6,200042,200042,0,127777,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.3824122824557185e-07,True
+joint_oov_10,seen_inputs,time_z_32,atol=rtol=1e-6,94063,94063,0,50705,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.6698653466070655e-07,True
+joint_oov_10,natural_unseen,time_z_32,atol=rtol=1e-6,85969,85969,0,64459,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.0729376854774687e-07,True
+joint_oov_10,injected,time_z_32,atol=rtol=1e-6,20010,20010,0,12613,0,9.5367431640625e-07,float,float32,[4096],"[4096, 1]",1.3607493166563692e-07,True
+joint_oov_10,all,time_scaled_32,atol=rtol=1e-6,200042,200042,0,96796,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3793864920332367e-08,True
+joint_oov_10,seen_inputs,time_scaled_32,atol=rtol=1e-6,94063,94063,0,43422,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.775535701185849e-08,True
+joint_oov_10,natural_unseen,time_scaled_32,atol=rtol=1e-6,85969,85969,0,43857,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.512448979496789e-09,True
+joint_oov_10,injected,time_scaled_32,atol=rtol=1e-6,20010,20010,0,9517,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",1.3565939703564355e-08,True
+joint_oov_10,all,time_bucket_32,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,seen_inputs,time_bucket_32,exact,94063,94063,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,natural_unseen,time_bucket_32,exact,85969,85969,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,injected,time_bucket_32,exact,20010,20010,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,all,time_z_64,atol=rtol=1e-6,200042,200042,0,46729,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.1890545092222699e-16,True
+joint_oov_10,seen_inputs,time_z_64,atol=rtol=1e-6,94063,94063,0,21707,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.6027492739961436e-16,True
+joint_oov_10,natural_unseen,time_z_64,atol=rtol=1e-6,85969,85969,0,20144,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",7.22344271299928e-17,True
+joint_oov_10,injected,time_z_64,atol=rtol=1e-6,20010,20010,0,4878,0,1.7763568394002505e-15,double,float64,[4096],"[4096, 1]",1.249486382536658e-16,True
+joint_oov_10,all,time_scaled_64,atol=rtol=1e-6,200042,200042,0,38592,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.1937247918390305e-17,True
+joint_oov_10,seen_inputs,time_scaled_64,atol=rtol=1e-6,94063,94063,0,18369,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.6121680462408187e-17,True
+joint_oov_10,natural_unseen,time_scaled_64,atol=rtol=1e-6,85969,85969,0,16230,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",7.201940528072145e-18,True
+joint_oov_10,injected,time_scaled_64,atol=rtol=1e-6,20010,20010,0,3993,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",1.2611378985372219e-17,True
+joint_oov_10,all,time_bucket_64,exact,200042,200042,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,seen_inputs,time_bucket_64,exact,94063,94063,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,natural_unseen,time_bucket_64,exact,85969,85969,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+joint_oov_10,injected,time_bucket_64,exact,20010,20010,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,all,UserID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,seen_inputs,UserID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,natural_unseen,UserID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,injected,UserID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,all,MovieID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,seen_inputs,MovieID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,natural_unseen,MovieID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,injected,MovieID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_movieid_10,all,Occupation_indexed,exact,4096,86016,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_movieid_10,seen_inputs,Occupation_indexed,exact,1844,38724,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_movieid_10,natural_unseen,Occupation_indexed,exact,1842,38682,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_movieid_10,injected,Occupation_indexed,exact,410,8610,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_movieid_10,all,Genres_split,exact,4096,24576,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,seen_inputs,Genres_split,exact,1844,11064,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,natural_unseen,Genres_split,exact,1842,11052,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,injected,Genres_split,exact,410,2460,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,all,Genres_indexed,exact,4096,24576,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,seen_inputs,Genres_indexed,exact,1844,11064,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,natural_unseen,Genres_indexed,exact,1842,11052,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,injected,Genres_indexed,exact,410,2460,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_movieid_10,all,time_z_32,atol=rtol=1e-6,4096,4096,0,3286,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.563518688082695e-08,True
+single_movieid_10,seen_inputs,time_z_32,atol=rtol=1e-6,1844,1844,0,1499,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.69060331001199e-08,True
+single_movieid_10,natural_unseen,time_z_32,atol=rtol=1e-6,1842,1842,0,1459,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.442255887871327e-08,True
+single_movieid_10,injected,time_z_32,atol=rtol=1e-6,410,410,0,328,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.5367431640625e-08,True
+single_movieid_10,all,time_scaled_32,atol=rtol=1e-6,4096,4096,0,2158,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.850758265703917e-09,True
+single_movieid_10,seen_inputs,time_scaled_32,atol=rtol=1e-6,1844,1844,0,990,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",8.000081118172007e-09,True
+single_movieid_10,natural_unseen,time_scaled_32,atol=rtol=1e-6,1842,1842,0,960,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.766077495164902e-09,True
+single_movieid_10,injected,time_scaled_32,atol=rtol=1e-6,410,410,0,208,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.55961348370808e-09,True
+single_movieid_10,all,time_bucket_32,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,seen_inputs,time_bucket_32,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,natural_unseen,time_bucket_32,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,injected,time_bucket_32,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,all,time_z_64,atol=rtol=1e-6,4096,4096,0,839,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.548228113576691e-17,True
+single_movieid_10,seen_inputs,time_z_64,atol=rtol=1e-6,1844,1844,0,383,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.611880894050271e-17,True
+single_movieid_10,natural_unseen,time_z_64,atol=rtol=1e-6,1842,1842,0,382,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.6048338263497266e-17,True
+single_movieid_10,injected,time_z_64,atol=rtol=1e-6,410,410,0,74,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.007634332793248e-17,True
+single_movieid_10,all,time_scaled_64,atol=rtol=1e-6,4096,4096,0,691,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.682398132421772e-18,True
+single_movieid_10,seen_inputs,time_scaled_64,atol=rtol=1e-6,1844,1844,0,307,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.620911992406766e-18,True
+single_movieid_10,natural_unseen,time_scaled_64,atol=rtol=1e-6,1842,1842,0,324,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.8820882190357045e-18,True
+single_movieid_10,injected,time_scaled_64,atol=rtol=1e-6,410,410,0,60,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.06179155350667e-18,True
+single_movieid_10,all,time_bucket_64,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,seen_inputs,time_bucket_64,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,natural_unseen,time_bucket_64,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_movieid_10,injected,time_bucket_64,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,all,UserID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,seen_inputs,UserID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,natural_unseen,UserID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,injected,UserID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,all,MovieID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,seen_inputs,MovieID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,natural_unseen,MovieID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,injected,MovieID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_occupation_10,all,Occupation_indexed,exact,4096,86016,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_occupation_10,seen_inputs,Occupation_indexed,exact,1844,38724,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_occupation_10,natural_unseen,Occupation_indexed,exact,1842,38682,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_occupation_10,injected,Occupation_indexed,exact,410,8610,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_occupation_10,all,Genres_split,exact,4096,24576,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,seen_inputs,Genres_split,exact,1844,11064,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,natural_unseen,Genres_split,exact,1842,11052,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,injected,Genres_split,exact,410,2460,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,all,Genres_indexed,exact,4096,24576,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,seen_inputs,Genres_indexed,exact,1844,11064,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,natural_unseen,Genres_indexed,exact,1842,11052,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,injected,Genres_indexed,exact,410,2460,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_occupation_10,all,time_z_32,atol=rtol=1e-6,4096,4096,0,3286,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.563518688082695e-08,True
+single_occupation_10,seen_inputs,time_z_32,atol=rtol=1e-6,1844,1844,0,1499,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.69060331001199e-08,True
+single_occupation_10,natural_unseen,time_z_32,atol=rtol=1e-6,1842,1842,0,1459,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.442255887871327e-08,True
+single_occupation_10,injected,time_z_32,atol=rtol=1e-6,410,410,0,328,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.5367431640625e-08,True
+single_occupation_10,all,time_scaled_32,atol=rtol=1e-6,4096,4096,0,2158,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.850758265703917e-09,True
+single_occupation_10,seen_inputs,time_scaled_32,atol=rtol=1e-6,1844,1844,0,990,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",8.000081118172007e-09,True
+single_occupation_10,natural_unseen,time_scaled_32,atol=rtol=1e-6,1842,1842,0,960,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.766077495164902e-09,True
+single_occupation_10,injected,time_scaled_32,atol=rtol=1e-6,410,410,0,208,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.55961348370808e-09,True
+single_occupation_10,all,time_bucket_32,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,seen_inputs,time_bucket_32,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,natural_unseen,time_bucket_32,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,injected,time_bucket_32,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,all,time_z_64,atol=rtol=1e-6,4096,4096,0,839,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.548228113576691e-17,True
+single_occupation_10,seen_inputs,time_z_64,atol=rtol=1e-6,1844,1844,0,383,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.611880894050271e-17,True
+single_occupation_10,natural_unseen,time_z_64,atol=rtol=1e-6,1842,1842,0,382,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.6048338263497266e-17,True
+single_occupation_10,injected,time_z_64,atol=rtol=1e-6,410,410,0,74,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.007634332793248e-17,True
+single_occupation_10,all,time_scaled_64,atol=rtol=1e-6,4096,4096,0,691,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.682398132421772e-18,True
+single_occupation_10,seen_inputs,time_scaled_64,atol=rtol=1e-6,1844,1844,0,307,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.620911992406766e-18,True
+single_occupation_10,natural_unseen,time_scaled_64,atol=rtol=1e-6,1842,1842,0,324,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.8820882190357045e-18,True
+single_occupation_10,injected,time_scaled_64,atol=rtol=1e-6,410,410,0,60,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.06179155350667e-18,True
+single_occupation_10,all,time_bucket_64,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,seen_inputs,time_bucket_64,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,natural_unseen,time_bucket_64,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_occupation_10,injected,time_bucket_64,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,all,UserID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,seen_inputs,UserID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,natural_unseen,UserID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,injected,UserID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,all,MovieID_indexed,exact,4096,4096,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,seen_inputs,MovieID_indexed,exact,1844,1844,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,natural_unseen,MovieID_indexed,exact,1842,1842,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,injected,MovieID_indexed,exact,410,410,0,0,0,0.0,int32,int32,[4096],"[4096, 1]",0.0,True
+single_genres_10,all,Occupation_indexed,exact,4096,86016,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_genres_10,seen_inputs,Occupation_indexed,exact,1844,38724,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_genres_10,natural_unseen,Occupation_indexed,exact,1842,38682,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_genres_10,injected,Occupation_indexed,exact,410,8610,0,0,0,0.0,list<element: float>,float32,"[4096, 21]","[4096, 21]",0.0,True
+single_genres_10,all,Genres_split,exact,4096,24576,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,seen_inputs,Genres_split,exact,1844,11064,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,natural_unseen,Genres_split,exact,1842,11052,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,injected,Genres_split,exact,410,2460,0,0,0,0.0,list<element: string not null>,object,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,all,Genres_indexed,exact,4096,24576,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,seen_inputs,Genres_indexed,exact,1844,11064,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,natural_unseen,Genres_indexed,exact,1842,11052,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,injected,Genres_indexed,exact,410,2460,0,0,0,0.0,list<element: int32 not null>,int32,"[4096, 6]","[4096, 6]",0.0,True
+single_genres_10,all,time_z_32,atol=rtol=1e-6,4096,4096,0,3286,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.563518688082695e-08,True
+single_genres_10,seen_inputs,time_z_32,atol=rtol=1e-6,1844,1844,0,1499,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.69060331001199e-08,True
+single_genres_10,natural_unseen,time_z_32,atol=rtol=1e-6,1842,1842,0,1459,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.442255887871327e-08,True
+single_genres_10,injected,time_z_32,atol=rtol=1e-6,410,410,0,328,0,1.1920928955078125e-07,float,float32,[4096],"[4096, 1]",9.5367431640625e-08,True
+single_genres_10,all,time_scaled_32,atol=rtol=1e-6,4096,4096,0,2158,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.850758265703917e-09,True
+single_genres_10,seen_inputs,time_scaled_32,atol=rtol=1e-6,1844,1844,0,990,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",8.000081118172007e-09,True
+single_genres_10,natural_unseen,time_scaled_32,atol=rtol=1e-6,1842,1842,0,960,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.766077495164902e-09,True
+single_genres_10,injected,time_scaled_32,atol=rtol=1e-6,410,410,0,208,0,1.4901161193847656e-08,float,float32,[4096],"[4096, 1]",7.55961348370808e-09,True
+single_genres_10,all,time_bucket_32,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,seen_inputs,time_bucket_32,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,natural_unseen,time_bucket_32,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,injected,time_bucket_32,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,all,time_z_64,atol=rtol=1e-6,4096,4096,0,839,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.548228113576691e-17,True
+single_genres_10,seen_inputs,time_z_64,atol=rtol=1e-6,1844,1844,0,383,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.611880894050271e-17,True
+single_genres_10,natural_unseen,time_z_64,atol=rtol=1e-6,1842,1842,0,382,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.6048338263497266e-17,True
+single_genres_10,injected,time_z_64,atol=rtol=1e-6,410,410,0,74,0,2.220446049250313e-16,double,float64,[4096],"[4096, 1]",4.007634332793248e-17,True
+single_genres_10,all,time_scaled_64,atol=rtol=1e-6,4096,4096,0,691,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.682398132421772e-18,True
+single_genres_10,seen_inputs,time_scaled_64,atol=rtol=1e-6,1844,1844,0,307,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.620911992406766e-18,True
+single_genres_10,natural_unseen,time_scaled_64,atol=rtol=1e-6,1842,1842,0,324,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.8820882190357045e-18,True
+single_genres_10,injected,time_scaled_64,atol=rtol=1e-6,410,410,0,60,0,2.7755575615628914e-17,double,float64,[4096],"[4096, 1]",4.06179155350667e-18,True
+single_genres_10,all,time_bucket_64,exact,4096,4096,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,seen_inputs,time_bucket_64,exact,1844,1844,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,natural_unseen,time_bucket_64,exact,1842,1842,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True
+single_genres_10,injected,time_bucket_64,exact,410,410,0,0,0,0.0,int64,int64,[4096],"[4096, 1]",0.0,True

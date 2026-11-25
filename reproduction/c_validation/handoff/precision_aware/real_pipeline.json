@@ -1,0 +1,3086 @@
+{
+  "rows_per_method": 812456,
+  "all_within_criteria": true,
+  "statistics": [
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "real_test",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_01",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_05",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "joint_oov_10",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_movieid_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_occupation_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "original",
+      "group": "single_genres_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "real_test",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_01",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_05",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "joint_oov_10",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_movieid_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_occupation_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "float64",
+      "group": "single_genres_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "real_test",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_01",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_05",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "joint_oov_10",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_movieid_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_occupation_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "strict",
+      "group": "single_genres_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "real_test",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_01",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_05",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "UserID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "MovieID_indexed",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "Occupation_indexed",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "Genres_split",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_z_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "mean_abs_error": 1.3824122824557185e-07
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_z_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "mean_abs_error": 1.1890545092222699e-16
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "Genres_indexed",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_scaled_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 1.3793864920332367e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_scaled_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 1.1937247918390305e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_bucket_32",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "joint_oov_10",
+      "output": "time_bucket_64",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_movieid_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_occupation_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "UserID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "MovieID_indexed",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "Occupation_indexed",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "Genres_split",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_z_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "mean_abs_error": 9.563518688082695e-08
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_z_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "mean_abs_error": 4.548228113576691e-17
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "Genres_indexed",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_scaled_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "mean_abs_error": 7.850758265703917e-09
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_scaled_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "mean_abs_error": 4.682398132421772e-18
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_bucket_32",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    },
+    {
+      "method": "adaptive",
+      "group": "single_genres_10",
+      "output": "time_bucket_64",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "mean_abs_error": 0.0
+    }
+  ]
+}

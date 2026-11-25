@@ -1,0 +1,605 @@
+{
+  "correctness": {
+    "rows": 82296,
+    "profiles": [
+      {
+        "profile": "legacy_float32",
+        "method": "original",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 1,
+        "fallback_rows": 0,
+        "previous_cases": 16,
+        "previous_mismatches": 1
+      },
+      {
+        "profile": "legacy_float32",
+        "method": "float64",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 1,
+        "fallback_rows": 0,
+        "previous_cases": 16,
+        "previous_mismatches": 1
+      },
+      {
+        "profile": "legacy_float32",
+        "method": "strict",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139,
+        "previous_cases": 16,
+        "previous_mismatches": 0
+      },
+      {
+        "profile": "legacy_float32",
+        "method": "adaptive",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5,
+        "previous_cases": 16,
+        "previous_mismatches": 0
+      },
+      {
+        "profile": "safe_nonzero_float32",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "safe_nonzero_float32",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "safe_nonzero_float32",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "safe_nonzero_float32",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float32",
+        "method": "original",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 2,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float32",
+        "method": "float64",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float32",
+        "method": "strict",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5148
+      },
+      {
+        "profile": "decimal_float32",
+        "method": "adaptive",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 4
+      },
+      {
+        "profile": "tiny_float32",
+        "method": "original",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 14,
+        "max_bucket_error": 5,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "tiny_float32",
+        "method": "float64",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 20,
+        "max_bucket_error": 4,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "tiny_float32",
+        "method": "strict",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5145
+      },
+      {
+        "profile": "tiny_float32",
+        "method": "adaptive",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5145
+      },
+      {
+        "profile": "wide_float32",
+        "method": "original",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 8,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "wide_float32",
+        "method": "float64",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "wide_float32",
+        "method": "strict",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5151
+      },
+      {
+        "profile": "wide_float32",
+        "method": "adaptive",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5151
+      },
+      {
+        "profile": "close_double_float32",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "close_double_float32",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "close_double_float32",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "close_double_float32",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "signed_zero_duplicate_float32",
+        "method": "original",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 4,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "signed_zero_duplicate_float32",
+        "method": "float64",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 4,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "signed_zero_duplicate_float32",
+        "method": "strict",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139
+      },
+      {
+        "profile": "signed_zero_duplicate_float32",
+        "method": "adaptive",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139
+      },
+      {
+        "profile": "negative_float32",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 5,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "negative_float32",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "negative_float32",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "negative_float32",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 9
+      },
+      {
+        "profile": "legacy_float64",
+        "method": "original",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 4,
+        "max_bucket_error": 1,
+        "fallback_rows": 0,
+        "previous_cases": 16,
+        "previous_mismatches": 3
+      },
+      {
+        "profile": "legacy_float64",
+        "method": "float64",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 2,
+        "max_bucket_error": 1,
+        "fallback_rows": 0,
+        "previous_cases": 16,
+        "previous_mismatches": 1
+      },
+      {
+        "profile": "legacy_float64",
+        "method": "strict",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139,
+        "previous_cases": 16,
+        "previous_mismatches": 0
+      },
+      {
+        "profile": "legacy_float64",
+        "method": "adaptive",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 6,
+        "previous_cases": 16,
+        "previous_mismatches": 0
+      },
+      {
+        "profile": "safe_nonzero_float64",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "safe_nonzero_float64",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "safe_nonzero_float64",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "safe_nonzero_float64",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float64",
+        "method": "original",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 10,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float64",
+        "method": "float64",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "decimal_float64",
+        "method": "strict",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5148
+      },
+      {
+        "profile": "decimal_float64",
+        "method": "adaptive",
+        "rows": 5148,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 12
+      },
+      {
+        "profile": "tiny_float64",
+        "method": "original",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 460,
+        "max_bucket_error": 4,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "tiny_float64",
+        "method": "float64",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 11,
+        "max_bucket_error": 3,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "tiny_float64",
+        "method": "strict",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5145
+      },
+      {
+        "profile": "tiny_float64",
+        "method": "adaptive",
+        "rows": 5145,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5145
+      },
+      {
+        "profile": "wide_float64",
+        "method": "original",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 464,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "wide_float64",
+        "method": "float64",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 2,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "wide_float64",
+        "method": "strict",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5151
+      },
+      {
+        "profile": "wide_float64",
+        "method": "adaptive",
+        "rows": 5151,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5151
+      },
+      {
+        "profile": "close_double_float64",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 8,
+        "max_bucket_error": 3,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "close_double_float64",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "close_double_float64",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "close_double_float64",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "signed_zero_duplicate_float64",
+        "method": "original",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "signed_zero_duplicate_float64",
+        "method": "float64",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 3,
+        "max_bucket_error": 2,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "signed_zero_duplicate_float64",
+        "method": "strict",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139
+      },
+      {
+        "profile": "signed_zero_duplicate_float64",
+        "method": "adaptive",
+        "rows": 5139,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5139
+      },
+      {
+        "profile": "negative_float64",
+        "method": "original",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 6,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "negative_float64",
+        "method": "float64",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 2,
+        "max_bucket_error": 1,
+        "fallback_rows": 0
+      },
+      {
+        "profile": "negative_float64",
+        "method": "strict",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 5142
+      },
+      {
+        "profile": "negative_float64",
+        "method": "adaptive",
+        "rows": 5142,
+        "status": "compared",
+        "mismatches": 0,
+        "max_bucket_error": 0,
+        "fallback_rows": 10
+      }
+    ]
+  },
+  "real": {
+    "all_within_criteria": true
+  },
+  "performance": {
+    "workload_method_rows": 96
+  }
+}

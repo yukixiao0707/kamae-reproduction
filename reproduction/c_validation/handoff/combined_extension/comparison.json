@@ -1,0 +1,6990 @@
+{
+  "rows_by_group": {
+    "real_test": {
+      "rows": 200042,
+      "cohorts": {
+        "all": 200042,
+        "seen_inputs": 104449,
+        "natural_unseen": 95593,
+        "injected": 0
+      }
+    },
+    "joint_oov_01": {
+      "rows": 200042,
+      "cohorts": {
+        "all": 200042,
+        "seen_inputs": 103413,
+        "natural_unseen": 94628,
+        "injected": 2001
+      }
+    },
+    "joint_oov_05": {
+      "rows": 200042,
+      "cohorts": {
+        "all": 200042,
+        "seen_inputs": 99268,
+        "natural_unseen": 90769,
+        "injected": 10005
+      }
+    },
+    "joint_oov_10": {
+      "rows": 200042,
+      "cohorts": {
+        "all": 200042,
+        "seen_inputs": 94063,
+        "natural_unseen": 85969,
+        "injected": 20010
+      }
+    },
+    "single_movieid_10": {
+      "rows": 4096,
+      "cohorts": {
+        "all": 4096,
+        "seen_inputs": 1844,
+        "natural_unseen": 1842,
+        "injected": 410
+      }
+    },
+    "single_occupation_10": {
+      "rows": 4096,
+      "cohorts": {
+        "all": 4096,
+        "seen_inputs": 1844,
+        "natural_unseen": 1842,
+        "injected": 410
+      }
+    },
+    "single_genres_10": {
+      "rows": 4096,
+      "cohorts": {
+        "all": 4096,
+        "seen_inputs": 1844,
+        "natural_unseen": 1842,
+        "injected": 410
+      }
+    }
+  },
+  "batch_size": 4096,
+  "seconds": 12.685240400023758,
+  "model_unchanged": true,
+  "all_outputs_passed": true,
+  "categorical_outputs_passed": true,
+  "failed_group_outputs": [],
+  "examples": [],
+  "bucket_chain_examples": [],
+  "statistics": [
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 2193429,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 2007453,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 626694,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 573558,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 626694,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 573558,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 127777,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3824122824557185e-07,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 56144,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.665373713810697e-07,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 71633,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.0732365212221957e-07,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 96796,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3793864920332367e-08,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 48098,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.772506170673931e-08,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 48698,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.498471187073458e-09,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 46729,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1890545092222699e-16,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 24198,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6139576641143885e-16,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 22531,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.247871504687322e-17,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 38592,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1937247918390305e-17,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 20454,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6242415421440954e-17,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 18138,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.233237786621902e-18,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 104449,
+      "elements": 104449,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "real_test",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 95593,
+      "elements": 95593,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 2171673,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 1987188,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 42021,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 620478,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 567768,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 12006,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 620478,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 567768,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 12006,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 127777,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3824122824557185e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 55628,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6668758540070367e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 70905,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.0730448562113165e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 1244,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.311242610201247e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 96796,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3793864920332367e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 47651,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.7738798312879518e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 48216,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.500852384807928e-09,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 929,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.2935190901405986e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 46729,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1890545092222699e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 23936,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6124982144667428e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 22277,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.245053495440321e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 516,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.2738990827283155e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 38592,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1937247918390305e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 20243,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6238996519277188e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 17937,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.2304465327479e-18,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 412,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.2206350095828807e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 103413,
+      "elements": 103413,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 94628,
+      "elements": 94628,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_01",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 2001,
+      "elements": 2001,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 2084628,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 1906149,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 210105,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 595608,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 544614,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 60030,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 595608,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 544614,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 60030,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 127777,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3824122824557185e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 53452,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6681110512582474e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 68050,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.0729742254524427e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 6275,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.355089705208431e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 96796,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3793864920332367e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 45779,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.7755210613384924e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 46323,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.51143537164831e-09,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 4694,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3341789302797332e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 46729,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1890545092222699e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 22985,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6123219131644823e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 21279,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.218914267357439e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 2465,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.227736886002272e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 38592,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1937247918390305e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 19449,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6232599608544065e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 17156,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.210963921248015e-18,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 1987,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.2198027584399833e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 99268,
+      "elements": 99268,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 90769,
+      "elements": 90769,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_05",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 10005,
+      "elements": 10005,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 4200882,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 1975323,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 1805349,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 420210,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 564378,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 515814,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 120060,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 1200252,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 564378,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 515814,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 120060,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 127777,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3824122824557185e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 50705,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6698653466070655e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 64459,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.0729376854774687e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 12613,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 9.5367431640625e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3607493166563692e-07,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 96796,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3793864920332367e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 43422,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.775535701185849e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 43857,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.512448979496789e-09,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 9517,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.3565939703564355e-08,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 46729,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1890545092222699e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 21707,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6027492739961436e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 20144,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.22344271299928e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 4878,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.7763568394002505e-15,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.249486382536658e-16,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 38592,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.1937247918390305e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 18369,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.6121680462408187e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 16230,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.201940528072145e-18,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 3993,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 1.2611378985372219e-17,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 200042,
+      "elements": 200042,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 94063,
+      "elements": 94063,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 85969,
+      "elements": 85969,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "joint_oov_10",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 20010,
+      "elements": 20010,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 38724,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 38682,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 8610,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 3286,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.563518688082695e-08,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 1499,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.69060331001199e-08,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 1459,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.442255887871327e-08,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 328,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.5367431640625e-08,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 2158,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.850758265703917e-09,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 990,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 8.000081118172007e-09,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 960,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.766077495164902e-09,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 208,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.55961348370808e-09,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 839,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.548228113576691e-17,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 383,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.611880894050271e-17,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 382,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.6048338263497266e-17,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 74,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.007634332793248e-17,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 691,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.682398132421772e-18,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 307,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.620911992406766e-18,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 324,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.8820882190357045e-18,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 60,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.06179155350667e-18,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_movieid_10",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 38724,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 38682,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 8610,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 3286,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.563518688082695e-08,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 1499,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.69060331001199e-08,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 1459,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.442255887871327e-08,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 328,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.5367431640625e-08,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 2158,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.850758265703917e-09,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 990,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 8.000081118172007e-09,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 960,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.766077495164902e-09,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 208,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.55961348370808e-09,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 839,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.548228113576691e-17,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 383,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.611880894050271e-17,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 382,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.6048338263497266e-17,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 74,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.007634332793248e-17,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 691,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.682398132421772e-18,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 307,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.620911992406766e-18,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 324,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.8820882190357045e-18,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 60,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.06179155350667e-18,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_occupation_10",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "UserID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "MovieID_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int32",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 86016,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 38724,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 38682,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "Occupation_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 8610,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: float>",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096,
+        21
+      ],
+      "keras_first_shape": [
+        4096,
+        21
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "Genres_split",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: string not null>",
+      "keras_dtype": "object",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 24576,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 11064,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 11052,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "Genres_indexed",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 2460,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "list<element: int32 not null>",
+      "keras_dtype": "int32",
+      "spark_first_shape": [
+        4096,
+        6
+      ],
+      "keras_first_shape": [
+        4096,
+        6
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 3286,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.563518688082695e-08,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 1499,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.69060331001199e-08,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 1459,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.442255887871327e-08,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_z_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 328,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.1920928955078125e-07,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 9.5367431640625e-08,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 2158,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.850758265703917e-09,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 990,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 8.000081118172007e-09,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 960,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.766077495164902e-09,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_scaled_32",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 208,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 1.4901161193847656e-08,
+      "spark_dtype": "float",
+      "keras_dtype": "float32",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 7.55961348370808e-09,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_bucket_32",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 839,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.548228113576691e-17,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 383,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.611880894050271e-17,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 382,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.6048338263497266e-17,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_z_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 74,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.220446049250313e-16,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.007634332793248e-17,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 691,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.682398132421772e-18,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 307,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.620911992406766e-18,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 324,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.8820882190357045e-18,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_scaled_64",
+      "criterion": "atol=rtol=1e-6",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 60,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 2.7755575615628914e-17,
+      "spark_dtype": "double",
+      "keras_dtype": "float64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 4.06179155350667e-18,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "all",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 4096,
+      "elements": 4096,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "seen_inputs",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1844,
+      "elements": 1844,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "natural_unseen",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 1842,
+      "elements": 1842,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "group": "single_genres_10",
+      "cohort": "injected",
+      "output": "time_bucket_64",
+      "criterion": "exact",
+      "rows": 410,
+      "elements": 410,
+      "mismatches": 0,
+      "exact_mismatches": 0,
+      "nonfinite_mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_dtype": "int64",
+      "keras_dtype": "int64",
+      "spark_first_shape": [
+        4096
+      ],
+      "keras_first_shape": [
+        4096,
+        1
+      ],
+      "mean_abs_error": 0.0,
+      "passed": true
+    }
+  ],
+  "interpretation": "执行完成不代表所有数值通过；空分组不写通过统计，原始反例完整保留。"
+}

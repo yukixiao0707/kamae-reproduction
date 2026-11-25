@@ -1,0 +1,96 @@
+{
+  "rows": 1000209,
+  "expected_movielens_rows": 1000209,
+  "full_movielens_count_match": true,
+  "passed": true,
+  "seconds": 9.756990400142968,
+  "batch_size": 4096,
+  "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\outputs\\spark_output.parquet",
+  "model": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\outputs\\preprocessing_model.keras",
+  "comparison": "精确比较四个离散输出；仅移除已记录的单元素包装维",
+  "columns": [
+    {
+      "column": "UserID_indexed",
+      "rows": 1000209,
+      "elements": 1000209,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_type": "int32",
+      "spark_shape": [
+        4096
+      ],
+      "keras_shape": [
+        4096,
+        1
+      ],
+      "logical_shape": [],
+      "keras_dtype": "int32",
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "column": "MovieID_indexed",
+      "rows": 1000209,
+      "elements": 1000209,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_type": "int32",
+      "spark_shape": [
+        4096
+      ],
+      "keras_shape": [
+        4096,
+        1
+      ],
+      "logical_shape": [],
+      "keras_dtype": "int32",
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "column": "Occupation_indexed",
+      "rows": 1000209,
+      "elements": 21004389,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_type": "list<element: float>",
+      "spark_shape": [
+        4096,
+        21
+      ],
+      "keras_shape": [
+        4096,
+        21
+      ],
+      "logical_shape": [
+        21
+      ],
+      "keras_dtype": "float32",
+      "mean_abs_error": 0.0,
+      "passed": true
+    },
+    {
+      "column": "Genres_indexed",
+      "rows": 1000209,
+      "elements": 6001254,
+      "mismatches": 0,
+      "max_abs_error": 0.0,
+      "spark_type": "list<element: int32 not null>",
+      "spark_shape": [
+        4096,
+        6
+      ],
+      "keras_shape": [
+        4096,
+        6
+      ],
+      "logical_shape": [
+        6
+      ],
+      "keras_dtype": "int32",
+      "mean_abs_error": 0.0,
+      "passed": true
+    }
+  ],
+  "examples": []
+}

@@ -1,0 +1,10 @@
+{
+  "cpu_model": "11th Gen Intel(R) Core(TM) i5-11400 @ 2.60GHz",
+  "logical_processors": 12,
+  "platform": "Windows",
+  "cpu_only": true,
+  "omp_threads": 2,
+  "tensorflow_intraop_threads": 2,
+  "tensorflow_interop_threads": 2,
+  "source": "Windows 硬件注册表和实验运行配置"
+}

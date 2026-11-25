@@ -1,0 +1,8 @@
+{
+  "tables_and_figure": "已整理，含全量基线、分桶与组合扩展",
+  "chapter_draft": "已包含完整问题链、实验设置、方法实现、正确性与 CPU 开销",
+  "b_chapter_review": "待收到 B 的实验章节后审阅",
+  "b_draft_received": false,
+  "review_done": false,
+  "precision_method_added": true
+}

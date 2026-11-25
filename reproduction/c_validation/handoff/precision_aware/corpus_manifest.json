@@ -1,0 +1,4140 @@
+{
+  "status": "prepared",
+  "seed": 20261124,
+  "profiles": [
+    {
+      "name": "legacy_float32",
+      "dtype": "float32",
+      "splits": [
+        0.0,
+        0.1,
+        1.0
+      ],
+      "rows": 5139,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float32_original.keras",
+          "sha256": "eabf249cce2b5b83ff458f0ba93593cd778af94ccf5da54750be02dfef429bf6",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float32_float64.keras",
+          "sha256": "2807a2146f22057630c8dd0543c6ae32a053bfd2799575b374fb496d0749934a",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  1036831949,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float32_strict.keras",
+          "sha256": "aee4e2f097e0ce7158fc077df2ab4feeb23f07eb5f932a9c24de0ec4413444c2",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  1036831949,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float32_adaptive.keras",
+          "sha256": "71bd977a7fa117952a959c2eb1edf14896ee35b6c982e754eb537d026109aaec",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  1036831949,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          0.0,
+          0.1,
+          1.0
+        ],
+        "native_float32_thresholds": [
+          0.0,
+          0.10000000149011612,
+          1.0
+        ],
+        "effective_thresholds": [
+          0.0,
+          0.10000000149011612,
+          1.0
+        ],
+        "threshold_keys": [
+          0,
+          1036831949,
+          1065353216
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": true,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "safe_nonzero_float32",
+      "dtype": "float32",
+      "splits": [
+        -2.0,
+        -0.5,
+        0.5,
+        2.0
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float32_original.keras",
+          "sha256": "93dd7b5c2eec13f078dadc2a9adb76a93354e8f12770aa77e9f421b8fbb00723",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float32_float64.keras",
+          "sha256": "d46ae9eea7643f41d43c776c96648dd52fbf67b0fc28947a0317a733a7b6fd4d",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -1073741825,
+                  -1056964609,
+                  1056964608,
+                  1073741824
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float32_strict.keras",
+          "sha256": "55f3e925204e947cc282d1b8a5abcce67b1ceecf1715865e491d78c51a646063",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -1073741825,
+                  -1056964609,
+                  1056964608,
+                  1073741824
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float32_adaptive.keras",
+          "sha256": "7631839a102431a250fc1a5cf9a7097fce9acc361ba14b80542e249ecccc2483",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -1073741825,
+                  -1056964609,
+                  1056964608,
+                  1073741824
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "native_float32_thresholds": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "effective_thresholds": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "threshold_keys": [
+          -1073741825,
+          -1056964609,
+          1056964608,
+          1073741824
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": false,
+        "strategy": "native_safe",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "decimal_float32",
+      "dtype": "float32",
+      "splits": [
+        -0.7,
+        -0.3,
+        0.1,
+        0.3,
+        0.7,
+        1.1
+      ],
+      "rows": 5148,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float32_original.keras",
+          "sha256": "f64a9b2e02c572336366cfb773fe283167df6cb3b1b109d17c70cda65d5bf297",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float32_float64.keras",
+          "sha256": "6da04d058617541048106f972f17c272f9079f484fad14dbf68b98eccfc58235",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.7000000476837158,
+                  1.100000023841858
+                ],
+                "threshold_keys": [
+                  -1060320052,
+                  -1050253722,
+                  1036831949,
+                  1050253722,
+                  1060320052,
+                  1066192077
+                ],
+                "risk_intervals": [
+                  [
+                    -1050253723,
+                    -1050253722
+                  ],
+                  [
+                    1060320051,
+                    1060320052
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float32_strict.keras",
+          "sha256": "158c096db6df2056ac6c526d28c8ed7945e0dd77f702a1beef99a35ef4cfd516",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.7000000476837158,
+                  1.100000023841858
+                ],
+                "threshold_keys": [
+                  -1060320052,
+                  -1050253722,
+                  1036831949,
+                  1050253722,
+                  1060320052,
+                  1066192077
+                ],
+                "risk_intervals": [
+                  [
+                    -1050253723,
+                    -1050253722
+                  ],
+                  [
+                    1060320051,
+                    1060320052
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float32_adaptive.keras",
+          "sha256": "d25779288542e59ff811c3b20ac6b44113fc3c2ec2e5723ff8f69612a0833935",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.7000000476837158,
+                  1.100000023841858
+                ],
+                "threshold_keys": [
+                  -1060320052,
+                  -1050253722,
+                  1036831949,
+                  1050253722,
+                  1060320052,
+                  1066192077
+                ],
+                "risk_intervals": [
+                  [
+                    -1050253723,
+                    -1050253722
+                  ],
+                  [
+                    1060320051,
+                    1060320052
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -0.7,
+          -0.3,
+          0.1,
+          0.3,
+          0.7,
+          1.1
+        ],
+        "native_float32_thresholds": [
+          -0.699999988079071,
+          -0.30000001192092896,
+          0.10000000149011612,
+          0.30000001192092896,
+          0.699999988079071,
+          1.100000023841858
+        ],
+        "effective_thresholds": [
+          -0.699999988079071,
+          -0.29999998211860657,
+          0.10000000149011612,
+          0.30000001192092896,
+          0.7000000476837158,
+          1.100000023841858
+        ],
+        "threshold_keys": [
+          -1060320052,
+          -1050253722,
+          1036831949,
+          1050253722,
+          1060320052,
+          1066192077
+        ],
+        "risk_intervals": [
+          [
+            -1050253723,
+            -1050253722
+          ],
+          [
+            1060320051,
+            1060320052
+          ]
+        ],
+        "guard_subnormal_at_zero": false,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "tiny_float32",
+      "dtype": "float32",
+      "splits": [
+        -1e-45,
+        -1e-310,
+        0.0,
+        1e-310,
+        1e-45
+      ],
+      "rows": 5145,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float32_original.keras",
+          "sha256": "9092e5a8e6c0abbff92357431e8b4d03e56f50f5c8408a95b751dd2690d0d149",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float32_float64.keras",
+          "sha256": "5ff665ad249024e3468967139cfd28b1283bbfe2c666115dd645e2111dfd9083",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  -0.0,
+                  0.0,
+                  1.401298464324817e-45,
+                  1.401298464324817e-45
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "risk_intervals": [
+                  [
+                    -2,
+                    0
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float32_strict.keras",
+          "sha256": "1c04ffca0b4f315d0f6828609feff7d8de3278df9e3f63484dd2893304aa6ac1",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  -0.0,
+                  0.0,
+                  1.401298464324817e-45,
+                  1.401298464324817e-45
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "risk_intervals": [
+                  [
+                    -2,
+                    0
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float32_adaptive.keras",
+          "sha256": "92f1f64e6e9e0825f9c600c36c7d095bec3cd12b5f83e9fbf4cdb43bc713cbf3",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  -0.0,
+                  0.0,
+                  1.401298464324817e-45,
+                  1.401298464324817e-45
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  1
+                ],
+                "risk_intervals": [
+                  [
+                    -2,
+                    0
+                  ],
+                  [
+                    0,
+                    1
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -1e-45,
+          -1e-310,
+          0.0,
+          1e-310,
+          1e-45
+        ],
+        "native_float32_thresholds": [
+          -1.401298464324817e-45,
+          -0.0,
+          0.0,
+          0.0,
+          1.401298464324817e-45
+        ],
+        "effective_thresholds": [
+          -0.0,
+          -0.0,
+          0.0,
+          1.401298464324817e-45,
+          1.401298464324817e-45
+        ],
+        "threshold_keys": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "risk_intervals": [
+          [
+            -2,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "wide_float32",
+      "dtype": "float32",
+      "splits": [
+        -1e+100,
+        -1e+40,
+        -1.0,
+        0.0,
+        1.0,
+        1e+40,
+        1e+100
+      ],
+      "rows": 5151,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float32_original.keras",
+          "sha256": "31d5a007ae967c71c6dc3a16e734bbf2286344ffd01f2497342691dc26fe523b",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float32_float64.keras",
+          "sha256": "a5c457cca324aeadc3399f820dfc538ae548bc93b043e703cf5352c474232b0c",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -3.4028234663852886e+38,
+                  -3.4028234663852886e+38,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "threshold_keys": [
+                  -2139095040,
+                  -2139095040,
+                  -1065353217,
+                  0,
+                  1065353216,
+                  2139095040,
+                  2139095040
+                ],
+                "risk_intervals": [
+                  [
+                    -2139095041,
+                    -2139095040
+                  ],
+                  [
+                    -2139095041,
+                    -2139095040
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float32_strict.keras",
+          "sha256": "c2389667a21f1fa010373c860e1a1a4ecc2d65cc25ecda0576e7cdb5f25ddf77",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -3.4028234663852886e+38,
+                  -3.4028234663852886e+38,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "threshold_keys": [
+                  -2139095040,
+                  -2139095040,
+                  -1065353217,
+                  0,
+                  1065353216,
+                  2139095040,
+                  2139095040
+                ],
+                "risk_intervals": [
+                  [
+                    -2139095041,
+                    -2139095040
+                  ],
+                  [
+                    -2139095041,
+                    -2139095040
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float32_adaptive.keras",
+          "sha256": "fec58f0f61f3b23ad2ea480e6772714f939a46e0943e0e7c7a5cc2e6ff66e932",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -3.4028234663852886e+38,
+                  -3.4028234663852886e+38,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "threshold_keys": [
+                  -2139095040,
+                  -2139095040,
+                  -1065353217,
+                  0,
+                  1065353216,
+                  2139095040,
+                  2139095040
+                ],
+                "risk_intervals": [
+                  [
+                    -2139095041,
+                    -2139095040
+                  ],
+                  [
+                    -2139095041,
+                    -2139095040
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -1e+100,
+          -1e+40,
+          -1.0,
+          0.0,
+          1.0,
+          1e+40,
+          1e+100
+        ],
+        "native_float32_thresholds": [
+          -Infinity,
+          -Infinity,
+          -1.0,
+          0.0,
+          1.0,
+          Infinity,
+          Infinity
+        ],
+        "effective_thresholds": [
+          -3.4028234663852886e+38,
+          -3.4028234663852886e+38,
+          -1.0,
+          0.0,
+          1.0,
+          Infinity,
+          Infinity
+        ],
+        "threshold_keys": [
+          -2139095040,
+          -2139095040,
+          -1065353217,
+          0,
+          1065353216,
+          2139095040,
+          2139095040
+        ],
+        "risk_intervals": [
+          [
+            -2139095041,
+            -2139095040
+          ],
+          [
+            -2139095041,
+            -2139095040
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "close_double_float32",
+      "dtype": "float32",
+      "splits": [
+        0.1,
+        0.10000000000000002,
+        0.10000000000000003,
+        0.5
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float32_original.keras",
+          "sha256": "00f260403f57332be56dfe30268033234cfa5395a021e0170128bc8ba51a8d4c",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float32_float64.keras",
+          "sha256": "aa934d122bd9b605bd386356f1e04b8100e5a38847ee6477c53e4ad5f7ccd8e8",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "threshold_keys": [
+                  1036831949,
+                  1036831949,
+                  1036831949,
+                  1056964608
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float32_strict.keras",
+          "sha256": "0859f3fd9905ba2322e207b00595afd59b62708b5089cbffc5f36e99f7640dec",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "threshold_keys": [
+                  1036831949,
+                  1036831949,
+                  1036831949,
+                  1056964608
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float32_adaptive.keras",
+          "sha256": "333d29b7d3455afa3eef117692cea5a8233c208f39e365b2d90a4cc9727cee75",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "threshold_keys": [
+                  1036831949,
+                  1036831949,
+                  1036831949,
+                  1056964608
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          0.1,
+          0.10000000000000002,
+          0.10000000000000003,
+          0.5
+        ],
+        "native_float32_thresholds": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.5
+        ],
+        "effective_thresholds": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.5
+        ],
+        "threshold_keys": [
+          1036831949,
+          1036831949,
+          1036831949,
+          1056964608
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": false,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "signed_zero_duplicate_float32",
+      "dtype": "float32",
+      "splits": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "rows": 5139,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float32_original.keras",
+          "sha256": "89dab5e38efb1d92ed85153367fb66dd5b3f8a5e0797515f753ba05ca5c63df9",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float32_float64.keras",
+          "sha256": "febd0e6899fbc245328942f9054e1f3122f481a00b7b42ef08d519f8f5de8f8a",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float32_strict.keras",
+          "sha256": "51bb6275c59eaf0151ab7cc5957aeee5641ddf3c2d0dc2b028a5673e09cff428",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float32_adaptive.keras",
+          "sha256": "8bd93283901c7c4acda6907df20f56771b5175dd68d22ea260172ee209ceccbc",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  1065353216
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "native_float32_thresholds": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "effective_thresholds": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "threshold_keys": [
+          0,
+          0,
+          1065353216
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "negative_float32",
+      "dtype": "float32",
+      "splits": [
+        -1.1,
+        -0.7,
+        -0.3,
+        0.0
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float32.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float32_original.keras",
+          "sha256": "aa1b6b6a899e4a82d3036bb17750e8864efc5fc270aa5e75d6eaacfda9f3ada1",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float32_float64.keras",
+          "sha256": "3c708b174b91d369205230d4b775b58d9c52824c666dc71fc63f041e392ae8b5",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.0999999046325684,
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -1066192077,
+                  -1060320052,
+                  -1050253722,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -1066192078,
+                    -1066192077
+                  ],
+                  [
+                    -1050253723,
+                    -1050253722
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float32_strict.keras",
+          "sha256": "fcdba21bed523ccb7d0195a0e449872c172935104ad5d846d2967d605cd29146",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.0999999046325684,
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -1066192077,
+                  -1060320052,
+                  -1050253722,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -1066192078,
+                    -1066192077
+                  ],
+                  [
+                    -1050253723,
+                    -1050253722
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float32_adaptive.keras",
+          "sha256": "4253906435773aec39e3ca36edea830bbb2547123a7816ecd5146305bd44c9b8",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float32",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.0999999046325684,
+                  -0.699999988079071,
+                  -0.29999998211860657,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -1066192077,
+                  -1060320052,
+                  -1050253722,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -1066192078,
+                    -1066192077
+                  ],
+                  [
+                    -1050253723,
+                    -1050253722
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float32",
+        "splits": [
+          -1.1,
+          -0.7,
+          -0.3,
+          0.0
+        ],
+        "native_float32_thresholds": [
+          -1.100000023841858,
+          -0.699999988079071,
+          -0.30000001192092896,
+          0.0
+        ],
+        "effective_thresholds": [
+          -1.0999999046325684,
+          -0.699999988079071,
+          -0.29999998211860657,
+          0.0
+        ],
+        "threshold_keys": [
+          -1066192077,
+          -1060320052,
+          -1050253722,
+          0
+        ],
+        "risk_intervals": [
+          [
+            -1066192078,
+            -1066192077
+          ],
+          [
+            -1050253723,
+            -1050253722
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "legacy_float64",
+      "dtype": "float64",
+      "splits": [
+        0.0,
+        0.1,
+        1.0
+      ],
+      "rows": 5139,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float64_original.keras",
+          "sha256": "474ab6a99b32f05cffb61a33c851b95fa2900cd00c19a1044c030d25f4a421e4",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float64_float64.keras",
+          "sha256": "15ab6bcf015e70c1a1d4b9a14c7975086a27bfea515915425e4b58b44645687e",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  4591870180066957722,
+                  4607182418800017408
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float64_strict.keras",
+          "sha256": "88724b9d67870efa5f604e6e99669c0c683365b1427b8f7437faa080552d4d03",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  4591870180066957722,
+                  4607182418800017408
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\legacy_float64_adaptive.keras",
+          "sha256": "edc2257b69c2a3ac3c646baa2a80da942fd3c500af8299ec5e55a1785e00f559",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  0.0,
+                  0.10000000149011612,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  0.0,
+                  0.1,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  4591870180066957722,
+                  4607182418800017408
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          0.0,
+          0.1,
+          1.0
+        ],
+        "native_float32_thresholds": [
+          0.0,
+          0.10000000149011612,
+          1.0
+        ],
+        "effective_thresholds": [
+          0.0,
+          0.1,
+          1.0
+        ],
+        "threshold_keys": [
+          0,
+          4591870180066957722,
+          4607182418800017408
+        ],
+        "risk_intervals": [
+          [
+            4591870180066957722,
+            4591870180174331904
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "safe_nonzero_float64",
+      "dtype": "float64",
+      "splits": [
+        -2.0,
+        -0.5,
+        0.5,
+        2.0
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float64_original.keras",
+          "sha256": "e50c94fe6080a5dab35199717267d0393e09b2696750caffa767504276adede3",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float64_float64.keras",
+          "sha256": "8284a212558c2518a3af4cc922e79642e07e9b429586f5e396e9bf51c318deaf",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -4611686018427387905,
+                  -4602678819172646913,
+                  4602678819172646912,
+                  4611686018427387904
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float64_strict.keras",
+          "sha256": "3d1a0100d50cab5ec0e12936559cc8a22a5e66f78c9962a985223b43a45ebc81",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -4611686018427387905,
+                  -4602678819172646913,
+                  4602678819172646912,
+                  4611686018427387904
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\safe_nonzero_float64_adaptive.keras",
+          "sha256": "ea049ea05d3146990054c44fa8deb77ad417753080e2a7859a45469252133650",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "native_float32_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "effective_thresholds": [
+                  -2.0,
+                  -0.5,
+                  0.5,
+                  2.0
+                ],
+                "threshold_keys": [
+                  -4611686018427387905,
+                  -4602678819172646913,
+                  4602678819172646912,
+                  4611686018427387904
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": false,
+                "strategy": "native_safe",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "native_float32_thresholds": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "effective_thresholds": [
+          -2.0,
+          -0.5,
+          0.5,
+          2.0
+        ],
+        "threshold_keys": [
+          -4611686018427387905,
+          -4602678819172646913,
+          4602678819172646912,
+          4611686018427387904
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": false,
+        "strategy": "native_safe",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "decimal_float64",
+      "dtype": "float64",
+      "splits": [
+        -0.7,
+        -0.3,
+        0.1,
+        0.3,
+        0.7,
+        1.1
+      ],
+      "rows": 5148,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float64_original.keras",
+          "sha256": "cad34da60e7d221ab5d150e3062fee015292572220615590129561837d7328ae",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float64_float64.keras",
+          "sha256": "a1a75b5b2c6b9c29c054ea77900a9e284bdad0701ff9c2893dcb1b5bde9599eb",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "threshold_keys": [
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  4591870180066957722,
+                  4599075939470750515,
+                  4604480259023595110,
+                  4607632778762754458
+                ],
+                "risk_intervals": [
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ],
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4599075939470750515,
+                    4599075939685498880
+                  ],
+                  [
+                    4604480258916220928,
+                    4604480259023595110
+                  ],
+                  [
+                    4607632778762754458,
+                    4607632778870128640
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float64_strict.keras",
+          "sha256": "ee23ad821197865e308d31b84a20f8bcfb25a86d72f843373b36e57969047905",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "threshold_keys": [
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  4591870180066957722,
+                  4599075939470750515,
+                  4604480259023595110,
+                  4607632778762754458
+                ],
+                "risk_intervals": [
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ],
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4599075939470750515,
+                    4599075939685498880
+                  ],
+                  [
+                    4604480258916220928,
+                    4604480259023595110
+                  ],
+                  [
+                    4607632778762754458,
+                    4607632778870128640
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\decimal_float64_adaptive.keras",
+          "sha256": "65841c7d6b14a0d01b7575455b30819d327dbeddc266325abc4c0417130199a0",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "native_float32_thresholds": [
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.10000000149011612,
+                  0.30000001192092896,
+                  0.699999988079071,
+                  1.100000023841858
+                ],
+                "effective_thresholds": [
+                  -0.7,
+                  -0.3,
+                  0.1,
+                  0.3,
+                  0.7,
+                  1.1
+                ],
+                "threshold_keys": [
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  4591870180066957722,
+                  4599075939470750515,
+                  4604480259023595110,
+                  4607632778762754458
+                ],
+                "risk_intervals": [
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ],
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4599075939470750515,
+                    4599075939685498880
+                  ],
+                  [
+                    4604480258916220928,
+                    4604480259023595110
+                  ],
+                  [
+                    4607632778762754458,
+                    4607632778870128640
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -0.7,
+          -0.3,
+          0.1,
+          0.3,
+          0.7,
+          1.1
+        ],
+        "native_float32_thresholds": [
+          -0.699999988079071,
+          -0.30000001192092896,
+          0.10000000149011612,
+          0.30000001192092896,
+          0.699999988079071,
+          1.100000023841858
+        ],
+        "effective_thresholds": [
+          -0.7,
+          -0.3,
+          0.1,
+          0.3,
+          0.7,
+          1.1
+        ],
+        "threshold_keys": [
+          -4604480259023595111,
+          -4599075939470750516,
+          4591870180066957722,
+          4599075939470750515,
+          4604480259023595110,
+          4607632778762754458
+        ],
+        "risk_intervals": [
+          [
+            -4604480259023595111,
+            -4604480258916220929
+          ],
+          [
+            -4599075939685498881,
+            -4599075939470750516
+          ],
+          [
+            4591870180066957722,
+            4591870180174331904
+          ],
+          [
+            4599075939470750515,
+            4599075939685498880
+          ],
+          [
+            4604480258916220928,
+            4604480259023595110
+          ],
+          [
+            4607632778762754458,
+            4607632778870128640
+          ]
+        ],
+        "guard_subnormal_at_zero": false,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "tiny_float64",
+      "dtype": "float64",
+      "splits": [
+        -1e-45,
+        -1e-310,
+        0.0,
+        1e-310,
+        1e-45
+      ],
+      "rows": 5145,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float64_original.keras",
+          "sha256": "26403eef6bd671df836ff45705c9a665ac067f9d1de69c41c96d1dba90eb0212",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float64_float64.keras",
+          "sha256": "1a8379b3a884c38ea76aea5233e9ded10176df1a1e8840e47075c768fd6f485d",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "threshold_keys": [
+                  -3933566627244108474,
+                  -20240225330732,
+                  0,
+                  20240225330731,
+                  3933566627244108473
+                ],
+                "risk_intervals": [
+                  [
+                    -3936146074321813505,
+                    -3933566627244108474
+                  ],
+                  [
+                    -20240225330732,
+                    0
+                  ],
+                  [
+                    0,
+                    20240225330731
+                  ],
+                  [
+                    3933566627244108473,
+                    3936146074321813504
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float64_strict.keras",
+          "sha256": "5a9058e8e428e4de0da1f24b7800f4e62d27d82d0825b1f1ac9335eb5638c82d",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "threshold_keys": [
+                  -3933566627244108474,
+                  -20240225330732,
+                  0,
+                  20240225330731,
+                  3933566627244108473
+                ],
+                "risk_intervals": [
+                  [
+                    -3936146074321813505,
+                    -3933566627244108474
+                  ],
+                  [
+                    -20240225330732,
+                    0
+                  ],
+                  [
+                    0,
+                    20240225330731
+                  ],
+                  [
+                    3933566627244108473,
+                    3936146074321813504
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\tiny_float64_adaptive.keras",
+          "sha256": "035afa61015c013718be7bcff51600e9a8d43e83e84f0ec851a0dcda6118e983",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "native_float32_thresholds": [
+                  -1.401298464324817e-45,
+                  -0.0,
+                  0.0,
+                  0.0,
+                  1.401298464324817e-45
+                ],
+                "effective_thresholds": [
+                  -1e-45,
+                  -1e-310,
+                  0.0,
+                  1e-310,
+                  1e-45
+                ],
+                "threshold_keys": [
+                  -3933566627244108474,
+                  -20240225330732,
+                  0,
+                  20240225330731,
+                  3933566627244108473
+                ],
+                "risk_intervals": [
+                  [
+                    -3936146074321813505,
+                    -3933566627244108474
+                  ],
+                  [
+                    -20240225330732,
+                    0
+                  ],
+                  [
+                    0,
+                    20240225330731
+                  ],
+                  [
+                    3933566627244108473,
+                    3936146074321813504
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -1e-45,
+          -1e-310,
+          0.0,
+          1e-310,
+          1e-45
+        ],
+        "native_float32_thresholds": [
+          -1.401298464324817e-45,
+          -0.0,
+          0.0,
+          0.0,
+          1.401298464324817e-45
+        ],
+        "effective_thresholds": [
+          -1e-45,
+          -1e-310,
+          0.0,
+          1e-310,
+          1e-45
+        ],
+        "threshold_keys": [
+          -3933566627244108474,
+          -20240225330732,
+          0,
+          20240225330731,
+          3933566627244108473
+        ],
+        "risk_intervals": [
+          [
+            -3936146074321813505,
+            -3933566627244108474
+          ],
+          [
+            -20240225330732,
+            0
+          ],
+          [
+            0,
+            20240225330731
+          ],
+          [
+            3933566627244108473,
+            3936146074321813504
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "wide_float64",
+      "dtype": "float64",
+      "splits": [
+        -1e+100,
+        -1e+40,
+        -1.0,
+        0.0,
+        1.0,
+        1e+40,
+        1e+100
+      ],
+      "rows": 5151,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float64_original.keras",
+          "sha256": "34589bbe5b5ce6592a5d7e778dabc3d2d6bcbe85717b4ffb0705e6e3e3f74574",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float64_float64.keras",
+          "sha256": "0c480ff4475e9cd60e68d5e46f785a34253c93fb2ac893074999d2b933a29c9a",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "threshold_keys": [
+                  -6103021453049119614,
+                  -5205425776111082662,
+                  -4607182418800017409,
+                  0,
+                  4607182418800017408,
+                  5205425776111082661,
+                  6103021453049119613
+                ],
+                "risk_intervals": [
+                  [
+                    -9218868437227405313,
+                    -6103021453049119614
+                  ],
+                  [
+                    -9218868437227405313,
+                    -5205425776111082662
+                  ],
+                  [
+                    5205425776111082661,
+                    9218868437227405312
+                  ],
+                  [
+                    6103021453049119613,
+                    9218868437227405312
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float64_strict.keras",
+          "sha256": "8b4a5a49565c9bd36d677c2c99491e0f2aa1ed934c6088d501818c299d0d479f",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "threshold_keys": [
+                  -6103021453049119614,
+                  -5205425776111082662,
+                  -4607182418800017409,
+                  0,
+                  4607182418800017408,
+                  5205425776111082661,
+                  6103021453049119613
+                ],
+                "risk_intervals": [
+                  [
+                    -9218868437227405313,
+                    -6103021453049119614
+                  ],
+                  [
+                    -9218868437227405313,
+                    -5205425776111082662
+                  ],
+                  [
+                    5205425776111082661,
+                    9218868437227405312
+                  ],
+                  [
+                    6103021453049119613,
+                    9218868437227405312
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\wide_float64_adaptive.keras",
+          "sha256": "b00838e62be96bff2e08218b5c09d7ca1ea2c2477b007137d34bba88d2ac754d",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "native_float32_thresholds": [
+                  -Infinity,
+                  -Infinity,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  Infinity,
+                  Infinity
+                ],
+                "effective_thresholds": [
+                  -1e+100,
+                  -1e+40,
+                  -1.0,
+                  0.0,
+                  1.0,
+                  1e+40,
+                  1e+100
+                ],
+                "threshold_keys": [
+                  -6103021453049119614,
+                  -5205425776111082662,
+                  -4607182418800017409,
+                  0,
+                  4607182418800017408,
+                  5205425776111082661,
+                  6103021453049119613
+                ],
+                "risk_intervals": [
+                  [
+                    -9218868437227405313,
+                    -6103021453049119614
+                  ],
+                  [
+                    -9218868437227405313,
+                    -5205425776111082662
+                  ],
+                  [
+                    5205425776111082661,
+                    9218868437227405312
+                  ],
+                  [
+                    6103021453049119613,
+                    9218868437227405312
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -1e+100,
+          -1e+40,
+          -1.0,
+          0.0,
+          1.0,
+          1e+40,
+          1e+100
+        ],
+        "native_float32_thresholds": [
+          -Infinity,
+          -Infinity,
+          -1.0,
+          0.0,
+          1.0,
+          Infinity,
+          Infinity
+        ],
+        "effective_thresholds": [
+          -1e+100,
+          -1e+40,
+          -1.0,
+          0.0,
+          1.0,
+          1e+40,
+          1e+100
+        ],
+        "threshold_keys": [
+          -6103021453049119614,
+          -5205425776111082662,
+          -4607182418800017409,
+          0,
+          4607182418800017408,
+          5205425776111082661,
+          6103021453049119613
+        ],
+        "risk_intervals": [
+          [
+            -9218868437227405313,
+            -6103021453049119614
+          ],
+          [
+            -9218868437227405313,
+            -5205425776111082662
+          ],
+          [
+            5205425776111082661,
+            9218868437227405312
+          ],
+          [
+            6103021453049119613,
+            9218868437227405312
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "close_double_float64",
+      "dtype": "float64",
+      "splits": [
+        0.1,
+        0.10000000000000002,
+        0.10000000000000003,
+        0.5
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float64_original.keras",
+          "sha256": "1968722e40cbdc44b3798a5c072fa06b1a015f144a7edc4094ee60a79c819698",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float64_float64.keras",
+          "sha256": "2c7d61344dcedd2c98adbe1e16b702017c1e61e7afbe4e427a5cd8ff9a687e28",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "threshold_keys": [
+                  4591870180066957722,
+                  4591870180066957723,
+                  4591870180066957724,
+                  4602678819172646912
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957723,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957724,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float64_strict.keras",
+          "sha256": "e94cfc73c5cc7bd68f6087ac5928c5f7fadc69f4a68d70da47955b7ddc6028dc",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "threshold_keys": [
+                  4591870180066957722,
+                  4591870180066957723,
+                  4591870180066957724,
+                  4602678819172646912
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957723,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957724,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\close_double_float64_adaptive.keras",
+          "sha256": "4d6b51f0474c05bd2d5af76e4fb601a556d7b1b0d028e160c6300d91e5bf592c",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "native_float32_thresholds": [
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.10000000149011612,
+                  0.5
+                ],
+                "effective_thresholds": [
+                  0.1,
+                  0.10000000000000002,
+                  0.10000000000000003,
+                  0.5
+                ],
+                "threshold_keys": [
+                  4591870180066957722,
+                  4591870180066957723,
+                  4591870180066957724,
+                  4602678819172646912
+                ],
+                "risk_intervals": [
+                  [
+                    4591870180066957722,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957723,
+                    4591870180174331904
+                  ],
+                  [
+                    4591870180066957724,
+                    4591870180174331904
+                  ]
+                ],
+                "guard_subnormal_at_zero": false,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          0.1,
+          0.10000000000000002,
+          0.10000000000000003,
+          0.5
+        ],
+        "native_float32_thresholds": [
+          0.10000000149011612,
+          0.10000000149011612,
+          0.10000000149011612,
+          0.5
+        ],
+        "effective_thresholds": [
+          0.1,
+          0.10000000000000002,
+          0.10000000000000003,
+          0.5
+        ],
+        "threshold_keys": [
+          4591870180066957722,
+          4591870180066957723,
+          4591870180066957724,
+          4602678819172646912
+        ],
+        "risk_intervals": [
+          [
+            4591870180066957722,
+            4591870180174331904
+          ],
+          [
+            4591870180066957723,
+            4591870180174331904
+          ],
+          [
+            4591870180066957724,
+            4591870180174331904
+          ]
+        ],
+        "guard_subnormal_at_zero": false,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "signed_zero_duplicate_float64",
+      "dtype": "float64",
+      "splits": [
+        -0.0,
+        0.0,
+        1.0
+      ],
+      "rows": 5139,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float64_original.keras",
+          "sha256": "b7b6e2756bafe36126b69c7ca6bc551d677d8bb6cdbad948eb514835361fe253",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float64_float64.keras",
+          "sha256": "a53496ac802e4f1e45c0aedc9112a8e37f6d8331594cf3847211497b49a3ff60",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  4607182418800017408
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float64_strict.keras",
+          "sha256": "48817df21ac6f454c90513da45449107bd69d864dccaad357db70d5d1ba1ab28",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  4607182418800017408
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\signed_zero_duplicate_float64_adaptive.keras",
+          "sha256": "9fe98bc2c46df519e1b7378c68463e60b8bd33abf9a0aa616eea305af7868065",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "native_float32_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "effective_thresholds": [
+                  -0.0,
+                  0.0,
+                  1.0
+                ],
+                "threshold_keys": [
+                  0,
+                  0,
+                  4607182418800017408
+                ],
+                "risk_intervals": [],
+                "guard_subnormal_at_zero": true,
+                "strategy": "strict",
+                "special_threshold": true,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "native_float32_thresholds": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "effective_thresholds": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "threshold_keys": [
+          0,
+          0,
+          4607182418800017408
+        ],
+        "risk_intervals": [],
+        "guard_subnormal_at_zero": true,
+        "strategy": "strict",
+        "special_threshold": true,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    },
+    {
+      "name": "negative_float64",
+      "dtype": "float64",
+      "splits": [
+        -1.1,
+        -0.7,
+        -0.3,
+        0.0
+      ],
+      "rows": 5142,
+      "array": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float64.npz",
+      "models": {
+        "original": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float64_original.keras",
+          "sha256": "ecbcfa0ffb017cff68088b090772645bee1d339ff49cfcc7386f2d5ea1b194df",
+          "plan": {
+            "mode": "original",
+            "strategy": "Kamae 原始导出"
+          }
+        },
+        "float64": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float64_float64.keras",
+          "sha256": "ecafce4b56a833d5de33193997a6aa990eb2f260d97fc6dc446fb2f578d88206",
+          "plan": {
+            "mode": "float64",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -4607632778762754459,
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -4607632778870128641,
+                    -4607632778762754459
+                  ],
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "strict": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float64_strict.keras",
+          "sha256": "a761635b5d2338c28a86e5192f0da8487d3a28baf4e797c6633265a778f2f676",
+          "plan": {
+            "mode": "strict",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -4607632778762754459,
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -4607632778870128641,
+                    -4607632778762754459
+                  ],
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        },
+        "adaptive": {
+          "status": "exported",
+          "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\negative_float64_adaptive.keras",
+          "sha256": "d2649d28baeb2454880cf6b494a5ede852e72081cdb790b63f35d9255d9df2aa",
+          "plan": {
+            "mode": "adaptive",
+            "bucketize_layers": [
+              {
+                "dtype": "float64",
+                "splits": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "native_float32_thresholds": [
+                  -1.100000023841858,
+                  -0.699999988079071,
+                  -0.30000001192092896,
+                  0.0
+                ],
+                "effective_thresholds": [
+                  -1.1,
+                  -0.7,
+                  -0.3,
+                  0.0
+                ],
+                "threshold_keys": [
+                  -4607632778762754459,
+                  -4604480259023595111,
+                  -4599075939470750516,
+                  0
+                ],
+                "risk_intervals": [
+                  [
+                    -4607632778870128641,
+                    -4607632778762754459
+                  ],
+                  [
+                    -4604480259023595111,
+                    -4604480258916220929
+                  ],
+                  [
+                    -4599075939685498881,
+                    -4599075939470750516
+                  ]
+                ],
+                "guard_subnormal_at_zero": true,
+                "strategy": "guarded",
+                "special_threshold": false,
+                "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+                "layer": "precision_bucket",
+                "input_column": "x",
+                "output_column": "bucket"
+              }
+            ],
+            "stage_count": 1,
+            "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+          }
+        }
+      },
+      "plan": {
+        "dtype": "float64",
+        "splits": [
+          -1.1,
+          -0.7,
+          -0.3,
+          0.0
+        ],
+        "native_float32_thresholds": [
+          -1.100000023841858,
+          -0.699999988079071,
+          -0.30000001192092896,
+          0.0
+        ],
+        "effective_thresholds": [
+          -1.1,
+          -0.7,
+          -0.3,
+          0.0
+        ],
+        "threshold_keys": [
+          -4607632778762754459,
+          -4604480259023595111,
+          -4599075939470750516,
+          0
+        ],
+        "risk_intervals": [
+          [
+            -4607632778870128641,
+            -4607632778762754459
+          ],
+          [
+            -4604480259023595111,
+            -4604480258916220929
+          ],
+          [
+            -4599075939685498881,
+            -4599075939470750516
+          ]
+        ],
+        "guard_subnormal_at_zero": true,
+        "strategy": "guarded",
+        "special_threshold": false,
+        "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等"
+      }
+    }
+  ],
+  "combined_models": {
+    "original": {
+      "status": "exported",
+      "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\combined_original.keras",
+      "sha256": "053d11c7e2ea17f11802f3affc7c84ad85ff4631f572e03b0bc82175a9d4f038",
+      "plan": {
+        "mode": "original",
+        "strategy": "Kamae 原始导出"
+      }
+    },
+    "float64": {
+      "status": "exported",
+      "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\combined_float64.keras",
+      "sha256": "b40c2a36d9f1a4dc05dfa01ff6ecf0d3c13433a004584d04b703bbb96c336fa9",
+      "plan": {
+        "mode": "float64",
+        "bucketize_layers": [
+          {
+            "dtype": "float32",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "threshold_keys": [
+              -1065353217,
+              0,
+              1036831949,
+              1065353216
+            ],
+            "risk_intervals": [],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_32",
+            "input_column": "time_scaled_32",
+            "output_column": "time_bucket_32"
+          },
+          {
+            "dtype": "float64",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "threshold_keys": [
+              -4607182418800017409,
+              0,
+              4591870180066957722,
+              4607182418800017408
+            ],
+            "risk_intervals": [
+              [
+                4591870180066957722,
+                4591870180174331904
+              ]
+            ],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_64",
+            "input_column": "time_scaled_64",
+            "output_column": "time_bucket_64"
+          }
+        ],
+        "stage_count": 11,
+        "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+      }
+    },
+    "strict": {
+      "status": "exported",
+      "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\combined_strict.keras",
+      "sha256": "67437e6fc476a5203f0723b5440cb623edccd1b366f3217cdccd24a6f1220a31",
+      "plan": {
+        "mode": "strict",
+        "bucketize_layers": [
+          {
+            "dtype": "float32",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "threshold_keys": [
+              -1065353217,
+              0,
+              1036831949,
+              1065353216
+            ],
+            "risk_intervals": [],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_32",
+            "input_column": "time_scaled_32",
+            "output_column": "time_bucket_32"
+          },
+          {
+            "dtype": "float64",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "threshold_keys": [
+              -4607182418800017409,
+              0,
+              4591870180066957722,
+              4607182418800017408
+            ],
+            "risk_intervals": [
+              [
+                4591870180066957722,
+                4591870180174331904
+              ]
+            ],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_64",
+            "input_column": "time_scaled_64",
+            "output_column": "time_bucket_64"
+          }
+        ],
+        "stage_count": 11,
+        "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+      }
+    },
+    "adaptive": {
+      "status": "exported",
+      "path": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\precision_aware\\combined_adaptive.keras",
+      "sha256": "8e22cb523bc2dd2742da696ebaabc335e98719237188a2302a1e674b941e0608",
+      "plan": {
+        "mode": "adaptive",
+        "bucketize_layers": [
+          {
+            "dtype": "float32",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "threshold_keys": [
+              -1065353217,
+              0,
+              1036831949,
+              1065353216
+            ],
+            "risk_intervals": [],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_32",
+            "input_column": "time_scaled_32",
+            "output_column": "time_bucket_32"
+          },
+          {
+            "dtype": "float64",
+            "splits": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "native_float32_thresholds": [
+              -1.0,
+              0.0,
+              0.10000000149011612,
+              1.0
+            ],
+            "effective_thresholds": [
+              -1.0,
+              0.0,
+              0.1,
+              1.0
+            ],
+            "threshold_keys": [
+              -4607182418800017409,
+              0,
+              4591870180066957722,
+              4607182418800017408
+            ],
+            "risk_intervals": [
+              [
+                4591870180066957722,
+                4591870180174331904
+              ]
+            ],
+            "guard_subnormal_at_zero": true,
+            "strategy": "guarded",
+            "special_threshold": false,
+            "semantic_contract": "Spark 浮点输入与 double 阈值比较；NaN 高于所有数；正负零相等",
+            "layer": "c_bucket_64",
+            "input_column": "time_scaled_64",
+            "output_column": "time_bucket_64"
+          }
+        ],
+        "stage_count": 11,
+        "scope": "显式 float32/float64 Bucketize 的导出；保留上游计算，不修正上游误差；SQL null 不在密集张量契约内"
+      }
+    }
+  },
+  "combined_groups": [
+    {
+      "name": "real_test",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_real_test.parquet",
+      "injected_fields": [],
+      "rows": 200042,
+      "injected_rows": 0,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.0
+    },
+    {
+      "name": "joint_oov_01",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_01.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 2001,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.010002899391127864
+    },
+    {
+      "name": "joint_oov_05",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_05.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 10005,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.050014496955639316
+    },
+    {
+      "name": "joint_oov_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_joint_oov_10.parquet",
+      "injected_fields": [
+        "MovieID",
+        "Occupation",
+        "Genres"
+      ],
+      "rows": 200042,
+      "injected_rows": 20010,
+      "natural_unseen_rows": 95593,
+      "actual_injection_rate": 0.10002899391127863
+    },
+    {
+      "name": "single_movieid_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_movieid_10.parquet",
+      "injected_fields": [
+        "MovieID"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    },
+    {
+      "name": "single_occupation_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_occupation_10.parquet",
+      "injected_fields": [
+        "Occupation"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    },
+    {
+      "name": "single_genres_10",
+      "parquet": "D:\\a-learn\\研究生\\课程\\大数据处理\\kamae-reproduction\\reproduction\\c_validation\\results\\combined_extension\\spark_single_genres_10.parquet",
+      "injected_fields": [
+        "Genres"
+      ],
+      "rows": 4096,
+      "injected_rows": 410,
+      "natural_unseen_rows": 2047,
+      "actual_injection_rate": 0.10009765625
+    }
+  ],
+  "frozen_parameters_file_sha256": "4d3430d5dd23b500515109877b841fdfa4dee2567f67b5ce55a2f71d7bf78c23",
+  "model_source": "原组合实验的训练参数；未重新拟合",
+  "contract": "非空、非降序 double 阈值；float32/float64 密集输入；不表示 SQL null"
+}

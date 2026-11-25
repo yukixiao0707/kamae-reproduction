@@ -1,0 +1,17 @@
+{
+  "fresh_process": true,
+  "precision_module_imported": false,
+  "kamae_imported": false,
+  "results": [
+    {
+      "dtype": "float32",
+      "rows": 16,
+      "mismatches": 0
+    },
+    {
+      "dtype": "float64",
+      "rows": 16,
+      "mismatches": 0
+    }
+  ]
+}

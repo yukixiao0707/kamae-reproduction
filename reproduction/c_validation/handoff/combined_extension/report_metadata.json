@@ -1,0 +1,7 @@
+{
+  "model_sha256": {
+    "combined_preprocessing.keras": "cb07500649528c7f02367efab3e1122de97f70cbfbde5376a1a2cb8fdbe0ba2e"
+  },
+  "comparison_passed": true,
+  "unknown_semantics_passed": true
+}
